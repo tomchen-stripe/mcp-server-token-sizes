@@ -11,7 +11,7 @@ pip install -e .
 ## Usage
 
 ```bash
-python get_size.py
+python get_size.py <filename>
 ```
 
 ## Stripe mcp response sizes
