@@ -27,13 +27,13 @@ This benchmarked design returns all endpoints and doesn't group them.
 
 | file | tokens (for 176 apis) | estimated tokens (for 572 apis) |
 |------|------------------------|----------------------------------|
-| responses/list-api-endpoints/name-only.txt | 903 tokens | 2709 tokens |
+| [responses/list-api-endpoints/name-only.txt](responses/list-api-endpoints/name-only.txt) | 903 tokens | 2709 tokens |
 
 2. Return all tool names and descriptions
 
 | file | tokens (for 176 apis) | estimated tokens (for 572 apis) |
 |------|------------------------|----------------------------------|
-| responses/list-api-endpoints/name-and-description.txt | 4347 tokens | 13041 tokens |
+| [responses/list-api-endpoints/name-and-description.txt](responses/list-api-endpoints/name-and-description.txt) | 4347 tokens | 13041 tokens |
 
 3. Return relevant tool names/descriptions
 
@@ -47,7 +47,7 @@ This benchmarked design returns all endpoints and doesn't group them.
 
 | file | tokens |
 |------|--------|
-| responses/get-api-endpoint-schema/full-openapi-schema.txt | 2873 tokens |
+| [responses/get-api-endpoint-schema/full-openapi-schema.txt](responses/get-api-endpoint-schema/full-openapi-schema.txt) | 2873 tokens |
 
 ## Model context sizes (current - 2025)
 | model | input context window | max output token |
