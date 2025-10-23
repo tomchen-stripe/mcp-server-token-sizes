@@ -1,6 +1,6 @@
-# token-size
+# mcp-server-response-token-sizes
 
-A Python project for token size utilities.
+A Python project for token sizes of mcp responses when including more tools.
 
 ## Installation
 
