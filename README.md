@@ -21,7 +21,6 @@ Benchmarked below using 176[*](#included-operationids) (top-level APIs) out of 5
 `list-api-endpoints`, `get-api-endpoint-schema`, `invoke-api-endpoint` from: https://www.stainless.com/blog/lessons-from-openapi-to-mcp-server-conversion#handling-large-apis-dynamically
 
 #### list-api-endpoints
-This benchmarked design returns all endpoints and doesn't group them.
 
 1. Return all tool names only
 
@@ -41,13 +40,14 @@ This benchmarked design returns all endpoints and doesn't group them.
 |----------------------------------|----------------------------------|
 | 61 tokens | 297 tokens |
 
-#### get-api-endpoint-schema (operationId: PostProducts)
+#### get-api-endpoint-schema
 
 1. Return the full OpenAPI schema
 
 | file | tokens |
 |------|--------|
-| [responses/get-api-endpoint-schema/full-openapi-schema.txt](responses/get-api-endpoint-schema/full-openapi-schema.txt) | 2873 tokens |
+| PostProducts (P89 schema size) [responses/get-api-endpoint-schema/full-openapi-schema.txt](responses/get-api-endpoint-schema/full-openapi-schema.txt) | 2873 tokens |
+| PostCheckoutSessions (P100 schema size) [responses/get-api-endpoint-schema/full-postcheckoutsessions.json](responses/get-api-endpoint-schema/full-postcheckoutsessions.json) | 16413 tokens |
 
 ## Model context sizes (current - 2025)
 | model | input context window | max output token |
