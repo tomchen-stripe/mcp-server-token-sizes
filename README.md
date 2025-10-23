@@ -8,7 +8,7 @@ In the three-metatool design, Stripe's APIs are dynamically returned in MCP resp
 
 There are approximately 572 Stripe APIs and 176 are top-level APIs (2025).
 
-All of the responses are parsed from [Stripe's OpenAPI spec](curl https://raw.githubusercontent.com/stripe/openapi/refs/heads/master/openapi/spec3.json).
+All of the responses are parsed from [Stripe's OpenAPI spec](https://raw.githubusercontent.com/stripe/openapi/refs/heads/master/openapi/spec3.json).
 
 We use tiktoken for GPT-4 to encode to tokens.
 
