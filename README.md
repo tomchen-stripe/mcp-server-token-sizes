@@ -1,6 +1,16 @@
 # mcp-server-response-token-sizes
 
-A Python project for token sizes of mcp responses when including more tools.
+Becnhmarking the token response sizes of a [three-metatool design](https://www.stainless.com/blog/lessons-from-openapi-to-mcp-server-conversion#handling-large-apis-dynamically) for Stripe's user-facing MCP server.
+
+[Model response limits](#model-context-sizes-current---2025) are more of a limiting factor than their context window sizes.
+
+In the three-metatool design, Stripe's APIs are dynamically returned in MCP responses to users instead of being returned statically when users connect to Stripe's MCP server. 
+
+There are approximately 572 Stripe APIs and 176 are top-level APIs (2025).
+
+All of the responses are parsed from [Stripe's OpenAPI spec](curl https://raw.githubusercontent.com/stripe/openapi/refs/heads/master/openapi/spec3.json).
+
+Below, we measure what the response sizes are (in tokens) for different ways of returning data to users. We use tiktoken encoding for GPT-4.
 
 ## Installation
 
@@ -18,7 +28,7 @@ python get_size.py <filename>
 Benchmarked below using 176[*](#included-operationids) (top-level APIs) out of 572 of Stripe's API endpoints (30% of total APIs).
 
 ### Using three-metatool design
-`list-api-endpoints`, `get-api-endpoint-schema`, `invoke-api-endpoint` from: https://www.stainless.com/blog/lessons-from-openapi-to-mcp-server-conversion#handling-large-apis-dynamically
+`list-api-endpoints`, `get-api-endpoint-schema`, `invoke-api-endpoint`
 
 #### list-api-endpoints
 
@@ -35,6 +45,8 @@ Benchmarked below using 176[*](#included-operationids) (top-level APIs) out of 5
 | [responses/list-api-endpoints/name-and-description.txt](responses/list-api-endpoints/name-and-description.txt) | 4347 tokens | 13041 tokens |
 
 3. Return relevant tool names/descriptions
+
+Estimates for if we were to return a subset of tools related to what the user is trying to do. There's more exploration to do here of how we would return a subset of APIs.
 
 | estimated tokens (for ~a dozen APIs) name-only | estimated tokens (for ~a dozen APIs) name-and-description |
 |----------------------------------|----------------------------------|
@@ -287,4 +299,4 @@ PostWebhookEndpointsWebhookEndpoint
 ## Other data points
 
 * [not-included-apis](apis/not-included.csv)
-* [sorted openapi schema token sizes](apis/schema-sizes-sorted.csv)
+* [sorted openapi schema char sizes](apis/schema-sizes-sorted.csv)
