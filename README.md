@@ -93,6 +93,10 @@ Benchmarked below using 176[*](#included-operationids) (top-level APIs) out of 5
 
 # Included operationIds
 
+<details>
+
+<summary>Click to expand</summary>
+
 ```
 DeleteAccountsAccount
 DeleteCouponsCoupon
@@ -271,6 +275,9 @@ PostTransfersTransfer
 PostWebhookEndpoints
 PostWebhookEndpointsWebhookEndpoint
 ```
+
+</details>
+
 ## Other data points
 
 * [not-included-apis](apis/not-included.csv)
