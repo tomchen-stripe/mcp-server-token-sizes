@@ -14,6 +14,27 @@ pip install -e .
 python get_size.py
 ```
 
+## Stripe mcp response sizes
+
+### Using 3-metatool design (list-api-endpoints, get-api-endpoint-schema, invoke-api-endpoint)
+
+#### list-api-endpoints
+1. Return only the names of the tools
+903 tokens
+
+2. Return name and brief description
+to-be-added
+
+3. Return name and full description
+to-be-added
+
+#### get-api-endpoint-schema (PostProducts)
+1. Return a subset of the OpenAPI schema
+to-be-added
+
+2. Return the full OpenAPI schema
+2873
+
 ## Model context sizes
 | model | input context window | max output token |
 |-------|----------------------|------------------|
