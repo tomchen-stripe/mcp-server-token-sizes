@@ -91,7 +91,7 @@ Benchmarked below using 176[*](#included-operationids) (top-level APIs) out of 5
 [Anthropic](https://docs.claude.com/en/docs/about-claude/model-deprecations): average ~1-1.5 years
 [OpenAI](https://platform.openai.com/docs/deprecations): average ~1.5-3 years
 
-# Included operationIds
+## Included operationIds
 
 <details>
 
@@ -277,6 +277,12 @@ PostWebhookEndpointsWebhookEndpoint
 ```
 
 </details>
+
+## What's next
+
+* evaluate the ability of sota models to navigate 176+ dynamic tools across different reasoning strengths
+   * evaluate different grouping strategies for tools
+* evaluate the ability of sota models to parse and use complex openapi schemas (`PostCheckoutSessions`)
 
 ## Other data points
 
