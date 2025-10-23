@@ -1,6 +1,6 @@
 # mcp-server-response-token-sizes
 
-Becnhmarking the token response sizes of a [three-metatool design](https://www.stainless.com/blog/lessons-from-openapi-to-mcp-server-conversion#handling-large-apis-dynamically) for Stripe's user-facing MCP server.
+Becnhmarking the response sizes (in tokens) of a [three-metatool design](https://www.stainless.com/blog/lessons-from-openapi-to-mcp-server-conversion#handling-large-apis-dynamically) for Stripe's user-facing MCP server.
 
 [Model response limits](#model-context-sizes-current---2025) are more of a limiting factor than their context window sizes.
 
@@ -10,7 +10,7 @@ There are approximately 572 Stripe APIs and 176 are top-level APIs (2025).
 
 All of the responses are parsed from [Stripe's OpenAPI spec](curl https://raw.githubusercontent.com/stripe/openapi/refs/heads/master/openapi/spec3.json).
 
-Below, we measure what the response sizes are (in tokens) for different ways of returning data to users. We use tiktoken encoding for GPT-4.
+We use tiktoken for GPT-4 to encode to tokens.
 
 ## Installation
 
@@ -299,4 +299,4 @@ PostWebhookEndpointsWebhookEndpoint
 ## Other data points
 
 * [not-included-apis](apis/not-included.csv)
-* [sorted openapi schema char sizes](apis/schema-sizes-sorted.csv)
+* [sorted openapi schema char sizes](apis/schema-sizes-sorted.csv) (~2-4 chars = 1 token)
