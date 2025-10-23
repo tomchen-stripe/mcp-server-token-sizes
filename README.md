@@ -47,7 +47,7 @@ Benchmarked below using 176[*](#included-operationids) (top-level APIs) out of 5
 | file | tokens |
 |------|--------|
 | PostProducts (P89 schema size) [responses/get-api-endpoint-schema/full-openapi-schema.txt](responses/get-api-endpoint-schema/full-openapi-schema.txt) | 2873 tokens |
-| PostCheckoutSessions (P100 schema size) [responses/get-api-endpoint-schema/full-postcheckoutsessions.json](responses/get-api-endpoint-schema/full-postcheckoutsessions.json) | 16413 tokens |
+| PostCheckoutSessions (P100 schema size) [responses/get-api-endpoint-schema/full-postcheckoutsessions-schema.json](responses/get-api-endpoint-schema/full-postcheckoutsessions.json) | 16413 tokens |
 
 ## Model context sizes (current - 2025)
 | model | input context window | max output token |
@@ -271,4 +271,7 @@ PostTransfersTransfer
 PostWebhookEndpoints
 PostWebhookEndpointsWebhookEndpoint
 ```
+## Other data points
+
 * [not-included-apis](apis/not-included.csv)
+* [sorted openapi schema token sizes](apis/schema-sizes-sorted.csv)
