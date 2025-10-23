@@ -35,11 +35,11 @@ This benchmarked design returns all endpoints and doesn't group them.
 |------|------------------------|----------------------------------|
 | responses/list-api-endpoints/name-and-description.txt | 4347 tokens | 13041 tokens |
 
-3. Return relevant tool names and descriptions
+3. Return relevant tool names/descriptions
 
-| file | tokens (for 176 apis) | estimated tokens (for 572 apis) |
-|------|------------------------|----------------------------------|
-| to-be-tested | to-be-tested | to-be-tested |
+| estimated tokens (for ~a dozen APIs) name-only | estimated tokens (for ~a dozen APIs) name-and-description |
+|----------------------------------|----------------------------------|
+| 61 tokens | 297 tokens |
 
 #### get-api-endpoint-schema (operationId: PostProducts)
 
