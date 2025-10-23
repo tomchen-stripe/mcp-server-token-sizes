@@ -28,8 +28,14 @@ python get_size.py
 | claude-sonnet-4-5 | 200k | 64k |
 | claude-haiku-4-5 | 200k | 64k |
 | claude-opus-4-1 | 200k | 32k |
+| gemini-2.5-pro | 1048k | 65k |
+| gemini-2.5-flash | 1048k | 65k |
 
-# TODO: add older models
+TODO: add more older models
+| claude-sonnet-4-0 | 200k | 64k |
+| claude-opus-4-0 | 200k | 32k |
+| gemini-2.0-flash | 1048k | 8k |
+| gemini-2.0-flash-lite | 1048k | 8k |
 
 [OpenAI](https://platform.openai.com/docs/models)
 [Anthropic](https://docs.claude.com/en/docs/about-claude/models/overview)
@@ -37,5 +43,5 @@ python get_size.py
 [Cursor](https://cursor.com/docs/models)
 
 ## Model deprecation timelines
-[Anthropic](https://docs.claude.com/en/docs/about-claude/model-deprecations)
-[OpenAI](https://platform.openai.com/docs/deprecations)
+[Anthropic](https://docs.claude.com/en/docs/about-claude/model-deprecations): average ~1-1.5 years
+[OpenAI](https://platform.openai.com/docs/deprecations): average ~1.5-3 years
