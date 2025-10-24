@@ -54,9 +54,7 @@ Estimates for if we were to return a subset of tools related to what the user is
 |----------------------------------|----------------------------------|
 | 61 tokens | 297 tokens |
 
-##### Num Stripe API growth
-
-  Public API Endpoint Growth (2020-2025)
+##### Public API Endpoint Growth (2020-2025)
 
   | Year          | operationId Count | Year-over-Year Growth | % Change |
   |---------------|-------------------|-----------------------|----------|
