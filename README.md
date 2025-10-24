@@ -54,6 +54,19 @@ Estimates for if we were to return a subset of tools related to what the user is
 |----------------------------------|----------------------------------|
 | 61 tokens | 297 tokens |
 
+##### Num Stripe API growth
+
+  Public API Endpoint Growth (2020-2025)
+
+  | Year          | operationId Count | Year-over-Year Growth | % Change |
+  |---------------|-------------------|-----------------------|----------|
+  | 2025 (Oct 24) | 583               | +21                   | +3.7%    |
+  | 2024 (Dec 24) | 562               | +64                   | +12.9%   |
+  | 2023 (Dec 21) | 498               | +54                   | +12.2%   |
+  | 2022 (Dec 23) | 444               | +54                   | +13.8%   |
+  | 2021 (Dec 23) | 390               | +28                   | +7.7%    |
+  | 2020 (Dec 15) | 362               | baseline              | -        |
+
 #### get-api-endpoint-schema
 
 1. Return the full OpenAPI schema
