@@ -12,6 +12,8 @@ All of the responses are parsed from [Stripe's OpenAPI spec](https://raw.githubu
 
 We use tiktoken for GPT-4 to encode to tokens.
 
+Metatool responses were generated using this [prototype](https://github.com/tomchen-stripe/mcp-server-prototype).
+
 ## Installation
 
 ```bash
