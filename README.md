@@ -24,6 +24,11 @@ pip install -e .
 python get_size.py <filename>
 ```
 
+## Stripe's OpenAPI spec token count
+
+* `spec3.json`: 1218830
+* `spec3.sdk.json`: 1557620
+
 ## Stripe mcp tokens usage
 Benchmarked below using 176[*](#included-operationids) (top-level APIs) out of 572 of Stripe's API endpoints (30% of total APIs).
 
