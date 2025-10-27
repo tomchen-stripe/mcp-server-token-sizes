@@ -1,8 +1,6 @@
-# mcp-server-response-token-sizes
+# mcp-server-token-sizes
 
-Becnhmarking the response sizes (in tokens) of a [three-metatool design](https://www.stainless.com/blog/lessons-from-openapi-to-mcp-server-conversion#handling-large-apis-dynamically) for Stripe's user-facing MCP server.
-
-[Model response limits](#model-context-sizes-current---2025) are more of a limiting factor than their context window sizes.
+Becnhmarking how many tokens the [three-metatool design](https://www.stainless.com/blog/lessons-from-openapi-to-mcp-server-conversion#handling-large-apis-dynamically) for Stripe's user-facing MCP server uses up.
 
 In the three-metatool design, Stripe's APIs are dynamically returned in MCP responses to users instead of being returned statically when users connect to Stripe's MCP server. 
 
@@ -26,7 +24,7 @@ pip install -e .
 python get_size.py <filename>
 ```
 
-## Stripe mcp response sizes
+## Stripe mcp tokens usage
 Benchmarked below using 176[*](#included-operationids) (top-level APIs) out of 572 of Stripe's API endpoints (30% of total APIs).
 
 ### Using three-metatool design
@@ -75,37 +73,37 @@ Estimates for if we were to return a subset of tools related to what the user is
 | PostCheckoutSessions (P100 schema size) [responses/get-api-endpoint-schema/full-postcheckoutsessions-schema.json](responses/get-api-endpoint-schema/full-postcheckoutsessions.json) | 16413 tokens |
 
 ## Model context sizes (current - 2025)
-| model | input context window | max output token |
-|-------|----------------------|------------------|
-| GPT-5 | 400k | 128k |
-| GPT-5 mini | 400k | 128k |
-| GPT-5 nano | 400k | 128k |
-| GPT-4.1 | 1047k | 32k |
-| GPT-oss-120b | 131k | 131k |
-| GPT-oss-20b | 131k | 131k |
-| GPT-5 Chat | 128k | 16k |
-| ChatGPT-4o | 128k | 16k |
-| claude-sonnet-4-5 | 200k | 64k |
-| claude-haiku-4-5 | 200k | 64k |
-| claude-opus-4-1 | 200k | 32k |
-| gemini-2.5-pro | 1048k | 65k |
-| gemini-2.5-flash | 1048k | 65k |
+| model | input context window |
+|-------|----------------------|
+| GPT-5 | 400k |
+| GPT-5 mini | 400k |
+| GPT-5 nano | 400k |
+| GPT-4.1 | 1047k |
+| GPT-oss-120b | 131k |
+| GPT-oss-20b | 131k |
+| GPT-5 Chat | 128k |
+| ChatGPT-4o | 128k |
+| claude-sonnet-4-5 | 200k |
+| claude-haiku-4-5 | 200k |
+| claude-opus-4-1 | 200k |
+| gemini-2.5-pro | 1048k |
+| gemini-2.5-flash | 1048k |
 
 ## Model context sizes (older)
-| model | input context window | max output token |
-|-------|----------------------|------------------|
-| GPT-4.1 mini | 1047k | 32k |
-| GPT-4 turbo | 128k | 4k |
-| GPT-3.5 turbo | 16k | 4k |
-| GPT-4 | 8k | 8k |
-| o1 | 200k | 100k |
-| o3 | 200k | 100k |
-| claude-sonnet-4-0 | 200k | 64k |
-| claude-opus-4-0 | 200k | 32k |
-| claude-3-5-haiku-latest | 200k | 8k |
-| Claude Haiku 3 | 200k | 4k |
-| gemini-2.0-flash | 1048k | 8k |
-| gemini-2.0-flash-lite | 1048k | 8k |
+| model | input context window |
+|-------|----------------------|
+| GPT-4.1 mini | 1047k |
+| GPT-4 turbo | 128k |
+| GPT-3.5 turbo | 16k |
+| GPT-4 | 8k |
+| o1 | 200k |
+| o3 | 200k |
+| claude-sonnet-4-0 | 200k |
+| claude-opus-4-0 | 200k |
+| claude-3-5-haiku-latest | 200k |
+| Claude Haiku 3 | 200k |
+| gemini-2.0-flash | 1048k |
+| gemini-2.0-flash-lite | 1048k |
 
 [OpenAI](https://platform.openai.com/docs/models)
 [Anthropic](https://docs.claude.com/en/docs/about-claude/models/overview)
