@@ -1,0 +1,4462 @@
+{
+  "metric": "cosine",
+  "n_operations": 176,
+  "nn_stats": {
+    "mean": 0.3157751055627603,
+    "median": 0.3196476352524051,
+    "std": 0.08844096240930922,
+    "min": 0.07435968878748866,
+    "max": 0.5646312986952762,
+    "q25": 0.26314271999511496,
+    "q75": 0.3709864361152013
+  },
+  "knn_stats": {
+    "k=3": {
+      "mean": 0.38620341872232183,
+      "median": 0.3905487132719984,
+      "std": 0.07247288755435022,
+      "min": 0.20841389935068588,
+      "max": 0.588433621328574
+    },
+    "k=5": {
+      "mean": 0.42466840200768635,
+      "median": 0.4285529620073454,
+      "std": 0.06759297799609133,
+      "min": 0.26498065257650283,
+      "max": 0.6267252269940511
+    },
+    "k=10": {
+      "mean": 0.4827902036423007,
+      "median": 0.4817700295889002,
+      "std": 0.05907863549469244,
+      "min": 0.35392678406834077,
+      "max": 0.6760092840932923
+    },
+    "k=20": {
+      "mean": 0.5422881824403456,
+      "median": 0.5358901271147339,
+      "std": 0.05238291805058561,
+      "min": 0.4365376499895712,
+      "max": 0.7227682705130276
+    },
+    "k=50": {
+      "mean": 0.6246295819264576,
+      "median": 0.621659772322452,
+      "std": 0.0428648691934061,
+      "min": 0.5243276172776633,
+      "max": 0.7738227996790483
+    }
+  },
+  "nn_distances": [
+    {
+      "operationId": "GetAccount",
+      "nn_distance": 0.07435968878748866,
+      "description": "Retrieves the details of an account."
+    },
+    {
+      "operationId": "GetAccountsAccount",
+      "nn_distance": 0.07435968878748866,
+      "description": "Retrieves the details of an account."
+    },
+    {
+      "operationId": "GetPaymentMethodDomains",
+      "nn_distance": 0.10370167815744458,
+      "description": "Lists the details of existing payment method domains."
+    },
+    {
+      "operationId": "GetPaymentMethodDomainsPaymentMethodDomain",
+      "nn_distance": 0.10370167815744458,
+      "description": "Retrieves the details of an existing payment method domain."
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurations",
+      "nn_distance": 0.1344681141608458,
+      "description": "List payment method configurations"
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurationsConfiguration",
+      "nn_distance": 0.1344681141608458,
+      "description": "Retrieve payment method configuration"
+    },
+    {
+      "operationId": "GetBalanceSettings",
+      "nn_distance": 0.14803228772310828,
+      "description": "Retrieves balance settings for a given connected account. Related guide: Making API calls for connected accounts"
+    },
+    {
+      "operationId": "PostBalanceSettings",
+      "nn_distance": 0.14803228772310828,
+      "description": "Updates balance settings for a given connected account. Related guide: Making API calls for connected accounts"
+    },
+    {
+      "operationId": "PostQuotes",
+      "nn_distance": 0.1704895757776994,
+      "description": "A quote models prices and services for a customer. Default options for header, description, footer, and expires_at can be set in the dashboard via the quote template."
+    },
+    {
+      "operationId": "PostQuotesQuote",
+      "nn_distance": 0.1704895757776994,
+      "description": "A quote models prices and services for a customer."
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurations",
+      "nn_distance": 0.17570691743324296,
+      "description": "Creates a payment method configuration"
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurationsConfiguration",
+      "nn_distance": 0.17570691743324296,
+      "description": "Update payment method configuration"
+    },
+    {
+      "operationId": "PostPaymentMethodDomains",
+      "nn_distance": 0.17801237015325655,
+      "description": "Creates a payment method domain."
+    },
+    {
+      "operationId": "PostPaymentMethodDomainsPaymentMethodDomain",
+      "nn_distance": 0.17801237015325655,
+      "description": "Updates an existing payment method domain."
+    },
+    {
+      "operationId": "GetPaymentLinks",
+      "nn_distance": 0.18375807314584036,
+      "description": "Returns a list of your payment links."
+    },
+    {
+      "operationId": "GetPaymentLinksPaymentLink",
+      "nn_distance": 0.18375807314584036,
+      "description": "Retrieve a payment link."
+    },
+    {
+      "operationId": "GetLinkedAccounts",
+      "nn_distance": 0.19557194635656816,
+      "description": "Returns a list of Financial Connections Account objects."
+    },
+    {
+      "operationId": "GetLinkedAccountsAccount",
+      "nn_distance": 0.19557194635656816,
+      "description": "Retrieves the details of an Financial Connections Account."
+    },
+    {
+      "operationId": "PostPaymentLinks",
+      "nn_distance": 0.20149128934471972,
+      "description": "Creates a payment link."
+    },
+    {
+      "operationId": "PostPaymentLinksPaymentLink",
+      "nn_distance": 0.20149128934471972,
+      "description": "Updates a payment link."
+    },
+    {
+      "operationId": "GetInvoiceitemsInvoiceitem",
+      "nn_distance": 0.20994454829579956,
+      "description": "Retrieves the invoice item with the given ID."
+    },
+    {
+      "operationId": "GetInvoicesInvoice",
+      "nn_distance": 0.20994454829579956,
+      "description": "Retrieves the invoice with the given ID."
+    },
+    {
+      "operationId": "PostPaymentIntents",
+      "nn_distance": 0.21140153073214885,
+      "description": "Creates a PaymentIntent object. After the PaymentIntent is created, attach a payment method and confirm to continue the payment. Learn more about the available payment flows with the Payment Intents API. When you use confirm=true during creation, it\u2019s equivalent to creating and confirming the PaymentIntent in the same call. You can use any parameters available in the confirm API when you supply confirm=true."
+    },
+    {
+      "operationId": "PostPaymentIntentsIntent",
+      "nn_distance": 0.21140153073214885,
+      "description": "Updates properties on a PaymentIntent object without confirming. Depending on which properties you update, you might need to confirm the PaymentIntent again. For example, updating the payment_method always requires you to confirm the PaymentIntent again. If you prefer to update and confirm at the same time, we recommend updating properties through the confirm API instead."
+    },
+    {
+      "operationId": "DeleteTaxIdsId",
+      "nn_distance": 0.2122244294718243,
+      "description": "Deletes an existing account or customer tax_id object."
+    },
+    {
+      "operationId": "GetTaxIdsId",
+      "nn_distance": 0.2122244294718243,
+      "description": "Retrieves an account or customer tax_id object."
+    },
+    {
+      "operationId": "GetSetupAttempts",
+      "nn_distance": 0.21816678895303832,
+      "description": "Returns a list of SetupAttempts that associate with a provided SetupIntent."
+    },
+    {
+      "operationId": "GetSetupIntents",
+      "nn_distance": 0.21816678895303832,
+      "description": "Returns a list of SetupIntents."
+    },
+    {
+      "operationId": "GetInvoicePaymentsInvoicePayment",
+      "nn_distance": 0.22467268239643468,
+      "description": "Retrieves the invoice payment with the given ID."
+    },
+    {
+      "operationId": "PostTaxRates",
+      "nn_distance": 0.230711039425203,
+      "description": "Creates a new tax rate."
+    },
+    {
+      "operationId": "PostTaxRatesTaxRate",
+      "nn_distance": 0.230711039425203,
+      "description": "Updates an existing tax rate."
+    },
+    {
+      "operationId": "GetExchangeRates",
+      "nn_distance": 0.23586034407149803,
+      "description": "[Deprecated] The ExchangeRate APIs are deprecated. Please use the FX Quotes API instead. Returns a list of objects that contain the rates at which foreign currencies are converted to one another. Only shows the currencies for which Stripe supports."
+    },
+    {
+      "operationId": "GetExchangeRatesRateId",
+      "nn_distance": 0.23586034407149803,
+      "description": "[Deprecated] The ExchangeRate APIs are deprecated. Please use the FX Quotes API instead. Retrieves the exchange rates from the given currency to every supported currency."
+    },
+    {
+      "operationId": "GetPromotionCodes",
+      "nn_distance": 0.2576299433169019,
+      "description": "Returns a list of your promotion codes."
+    },
+    {
+      "operationId": "GetPromotionCodesPromotionCode",
+      "nn_distance": 0.2576299433169019,
+      "description": "Retrieves the promotion code with the given ID. In order to retrieve a promotion code by the customer-facing code use list with the desired code."
+    },
+    {
+      "operationId": "GetLinkAccountSessionsSession",
+      "nn_distance": 0.2579854432070896,
+      "description": "Retrieves the details of a Financial Connections Session"
+    },
+    {
+      "operationId": "GetPaymentIntentsIntent",
+      "nn_distance": 0.2591345264325825,
+      "description": "Retrieves the details of a PaymentIntent that has previously been created. You can retrieve a PaymentIntent client-side using a publishable key when the client_secret is in the query string. If you retrieve a PaymentIntent with a publishable key, it only returns a subset of properties. Refer to the payment intent object reference for more details."
+    },
+    {
+      "operationId": "GetSetupIntentsIntent",
+      "nn_distance": 0.2591345264325825,
+      "description": "Retrieves the details of a SetupIntent that has previously been created. Client-side retrieval using a publishable key is allowed when the client_secret is provided in the query string. When retrieved with a publishable key, only a subset of properties will be returned. Please refer to the SetupIntent object reference for more details."
+    },
+    {
+      "operationId": "GetCountrySpecs",
+      "nn_distance": 0.26136522014982866,
+      "description": "Lists all Country Spec objects available in the API."
+    },
+    {
+      "operationId": "GetCountrySpecsCountry",
+      "nn_distance": 0.26136522014982866,
+      "description": "Returns a Country Spec for a given Country code."
+    },
+    {
+      "operationId": "PostSetupIntents",
+      "nn_distance": 0.26213464886852644,
+      "description": "Creates a SetupIntent object. After you create the SetupIntent, attach a payment method and confirm it to collect any required permissions to charge the payment method later."
+    },
+    {
+      "operationId": "PostSetupIntentsIntent",
+      "nn_distance": 0.26213464886852644,
+      "description": "Updates a SetupIntent object."
+    },
+    {
+      "operationId": "GetSubscriptionItems",
+      "nn_distance": 0.2628033111062722,
+      "description": "Returns a list of your subscription items for a given subscription."
+    },
+    {
+      "operationId": "GetSubscriptionItemsItem",
+      "nn_distance": 0.2628033111062722,
+      "description": "Retrieves the subscription item with the given ID."
+    },
+    {
+      "operationId": "PostShippingRates",
+      "nn_distance": 0.2632558562913959,
+      "description": "Creates a new shipping rate object."
+    },
+    {
+      "operationId": "PostShippingRatesShippingRateToken",
+      "nn_distance": 0.2632558562913959,
+      "description": "Updates an existing shipping rate object."
+    },
+    {
+      "operationId": "GetWebhookEndpoints",
+      "nn_distance": 0.26832544400616143,
+      "description": "Returns a list of your webhook endpoints."
+    },
+    {
+      "operationId": "GetWebhookEndpointsWebhookEndpoint",
+      "nn_distance": 0.26832544400616143,
+      "description": "Retrieves the webhook endpoint with the given ID."
+    },
+    {
+      "operationId": "PostSubscriptionItems",
+      "nn_distance": 0.26911218424204386,
+      "description": "Adds a new item to an existing subscription. No existing items will be changed or replaced."
+    },
+    {
+      "operationId": "PostSubscriptionItemsItem",
+      "nn_distance": 0.26911218424204386,
+      "description": "Updates the plan or quantity of an item on a current subscription."
+    },
+    {
+      "operationId": "PostSubscriptionSchedules",
+      "nn_distance": 0.26984774871196426,
+      "description": "Creates a new subscription schedule object. Each customer can have up to 500 active or scheduled subscriptions."
+    },
+    {
+      "operationId": "PostSubscriptionSchedulesSchedule",
+      "nn_distance": 0.26984774871196426,
+      "description": "Updates an existing subscription schedule."
+    },
+    {
+      "operationId": "GetTaxIds",
+      "nn_distance": 0.27110096484708734,
+      "description": "Returns a list of tax IDs."
+    },
+    {
+      "operationId": "GetFileLinks",
+      "nn_distance": 0.2712237417747305,
+      "description": "Returns a list of file links."
+    },
+    {
+      "operationId": "GetFileLinksLink",
+      "nn_distance": 0.2712237417747305,
+      "description": "Retrieves the file link with the given ID."
+    },
+    {
+      "operationId": "GetApplicationFees",
+      "nn_distance": 0.27621931441124514,
+      "description": "Returns a list of application fees you\u2019ve previously collected. The application fees are returned in sorted order, with the most recent fees appearing first."
+    },
+    {
+      "operationId": "GetApplicationFeesId",
+      "nn_distance": 0.27621931441124514,
+      "description": "Retrieves the details of an application fee that your account has collected. The same information is returned when refunding the application fee."
+    },
+    {
+      "operationId": "PostTaxIds",
+      "nn_distance": 0.2782588473746528,
+      "description": "Creates a new account or customer tax_id object."
+    },
+    {
+      "operationId": "PostPayouts",
+      "nn_distance": 0.27855467088934327,
+      "description": "To send funds to your own bank account, create a new payout object. Your Stripe balance must cover the payout amount. If it doesn\u2019t, you receive an \u201cInsufficient Funds\u201d error. If your API key is in test mode, money won\u2019t actually be sent, though every other action occurs as if you\u2019re in live mode. If you create a manual payout on a Stripe account that uses multiple payment source types, you need to specify the source type balance that the payout draws from. The balance object details available and pending amounts by source type."
+    },
+    {
+      "operationId": "PostTransfers",
+      "nn_distance": 0.27855467088934327,
+      "description": "To send funds from your Stripe account to a connected account, you create a new transfer object. Your Stripe balance must be able to cover the transfer amount, or you\u2019ll receive an \u201cInsufficient Funds\u201d error."
+    },
+    {
+      "operationId": "GetSubscriptionSchedules",
+      "nn_distance": 0.28070989674268576,
+      "description": "Retrieves the list of your subscription schedules."
+    },
+    {
+      "operationId": "GetSubscriptionSchedulesSchedule",
+      "nn_distance": 0.28070989674268576,
+      "description": "Retrieves the details of an existing subscription schedule. You only need to supply the unique subscription schedule identifier that was returned upon subscription schedule creation."
+    },
+    {
+      "operationId": "PostCoupons",
+      "nn_distance": 0.2808149223943306,
+      "description": "You can create coupons easily via the coupon management page of the Stripe dashboard. Coupon creation is also accessible via the API if you need to create coupons on the fly. A coupon has either a percent_off or an amount_off and currency. If you set an amount_off, that amount will be subtracted from any invoice\u2019s subtotal. For example, an invoice with a subtotal of 100 will have a final total of 0 if a coupon with an amount_off of 200 is applied to it and an invoice with a subtotal of 300 will have a final total of 100 if a coupon with an amount_off of 200 is applied to it."
+    },
+    {
+      "operationId": "DeleteCouponsCoupon",
+      "nn_distance": 0.2808149223943306,
+      "description": "You can delete coupons via the coupon management page of the Stripe dashboard. However, deleting a coupon does not affect any customers who have already applied the coupon; it means that new customers can\u2019t redeem the coupon. You can also delete coupons via the API."
+    },
+    {
+      "operationId": "PostWebhookEndpoints",
+      "nn_distance": 0.294310944833299,
+      "description": "A webhook endpoint must have a url and a list of enabled_events. You may optionally specify the Boolean connect parameter. If set to true, then a Connect webhook endpoint that notifies the specified url about events from all connected accounts is created; otherwise an account webhook endpoint that notifies the specified url only about events from your account is created. You can also create webhook endpoints in the webhooks settings section of the Dashboard."
+    },
+    {
+      "operationId": "PostWebhookEndpointsWebhookEndpoint",
+      "nn_distance": 0.294310944833299,
+      "description": "Updates the webhook endpoint. You may edit the url, the list of enabled_events, and the status of your endpoint."
+    },
+    {
+      "operationId": "GetCreditNotes",
+      "nn_distance": 0.2949877329504953,
+      "description": "Returns a list of credit notes."
+    },
+    {
+      "operationId": "GetCreditNotesId",
+      "nn_distance": 0.2949877329504953,
+      "description": "Retrieves the credit note object with the given identifier."
+    },
+    {
+      "operationId": "PostFileLinks",
+      "nn_distance": 0.2956604482942693,
+      "description": "Creates a new file link object."
+    },
+    {
+      "operationId": "PostFileLinksLink",
+      "nn_distance": 0.2956604482942693,
+      "description": "Updates an existing file link object. Expired links can no longer be updated."
+    },
+    {
+      "operationId": "PostPaymentMethodsPaymentMethod",
+      "nn_distance": 0.2991734778360008,
+      "description": "Updates a PaymentMethod object. A PaymentMethod must be attached to a customer to be updated."
+    },
+    {
+      "operationId": "GetShippingRatesShippingRateToken",
+      "nn_distance": 0.29964396240183855,
+      "description": "Returns the shipping rate object with the given ID."
+    },
+    {
+      "operationId": "GetPaymentIntents",
+      "nn_distance": 0.3002379355359406,
+      "description": "Returns a list of PaymentIntents."
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplates",
+      "nn_distance": 0.3012451989984931,
+      "description": "List all templates, ordered by creation date, with the most recently created template appearing first."
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplatesTemplate",
+      "nn_distance": 0.3012451989984931,
+      "description": "Retrieves an invoice rendering template with the given ID. It by default returns the latest version of the template. Optionally, specify a version to see previous versions."
+    },
+    {
+      "operationId": "PostEphemeralKeys",
+      "nn_distance": 0.3055470895501534,
+      "description": "Creates a short-lived API key for a given resource."
+    },
+    {
+      "operationId": "DeleteEphemeralKeysKey",
+      "nn_distance": 0.3055470895501534,
+      "description": "Invalidates a short-lived API key for a given resource."
+    },
+    {
+      "operationId": "PostTopups",
+      "nn_distance": 0.31079800846059236,
+      "description": "Top up the balance of an account"
+    },
+    {
+      "operationId": "PostTopupsTopup",
+      "nn_distance": 0.31079800846059236,
+      "description": "Updates the metadata of a top-up. Other top-up details are not editable by design."
+    },
+    {
+      "operationId": "GetDisputes",
+      "nn_distance": 0.3121131675488653,
+      "description": "Returns a list of your disputes."
+    },
+    {
+      "operationId": "GetDisputesDispute",
+      "nn_distance": 0.3121131675488653,
+      "description": "Retrieves the dispute with the given ID."
+    },
+    {
+      "operationId": "GetInvoiceitems",
+      "nn_distance": 0.31343853968257596,
+      "description": "Returns a list of your invoice items. Invoice items are returned sorted by creation date, with the most recently created invoice items appearing first."
+    },
+    {
+      "operationId": "GetInvoices",
+      "nn_distance": 0.31343853968257596,
+      "description": "You can list all invoices, or list the invoices for a specific customer. The invoices are returned sorted by creation date, with the most recently created invoices appearing first."
+    },
+    {
+      "operationId": "GetPlans",
+      "nn_distance": 0.3152788432303747,
+      "description": "Returns a list of your plans."
+    },
+    {
+      "operationId": "GetPlansPlan",
+      "nn_distance": 0.3152788432303747,
+      "description": "Retrieves the plan with the given ID."
+    },
+    {
+      "operationId": "GetCustomers",
+      "nn_distance": 0.31693228566840026,
+      "description": "Returns a list of your customers. The customers are returned sorted by creation date, with the most recent customers appearing first."
+    },
+    {
+      "operationId": "GetProducts",
+      "nn_distance": 0.31693228566840026,
+      "description": "Returns a list of your products. The products are returned sorted by creation date, with the most recently created products appearing first."
+    },
+    {
+      "operationId": "DeleteSubscriptionItemsItem",
+      "nn_distance": 0.3194159138067225,
+      "description": "Deletes an item from the subscription. Removing a subscription item from a subscription will not cancel the subscription."
+    },
+    {
+      "operationId": "GetPayouts",
+      "nn_distance": 0.31987935669808765,
+      "description": "Returns a list of existing payouts sent to third-party bank accounts or payouts that Stripe sent to you. The payouts return in sorted order, with the most recently created payouts appearing first."
+    },
+    {
+      "operationId": "GetPayoutsPayout",
+      "nn_distance": 0.31987935669808765,
+      "description": "Retrieves the details of an existing payout. Supply the unique payout ID from either a payout creation request or the payout list. Stripe returns the corresponding payout information."
+    },
+    {
+      "operationId": "PostAccountSessions",
+      "nn_distance": 0.32200742715464337,
+      "description": "Creates a AccountSession object that includes a single-use token that the platform can use on their front-end to grant client-side API access."
+    },
+    {
+      "operationId": "PostCustomerSessions",
+      "nn_distance": 0.32200742715464337,
+      "description": "Creates a Customer Session object that includes a single-use client secret that you can use on your front-end to grant client-side API access for certain customer resources."
+    },
+    {
+      "operationId": "GetTopups",
+      "nn_distance": 0.32333781142635876,
+      "description": "Returns a list of top-ups."
+    },
+    {
+      "operationId": "GetTopupsTopup",
+      "nn_distance": 0.32333781142635876,
+      "description": "Retrieves the details of a top-up that has previously been created. Supply the unique top-up ID that was returned from your previous request, and Stripe will return the corresponding top-up information."
+    },
+    {
+      "operationId": "GetShippingRates",
+      "nn_distance": 0.33093903200388686,
+      "description": "Returns a list of your shipping rates."
+    },
+    {
+      "operationId": "GetTaxRates",
+      "nn_distance": 0.33093903200388686,
+      "description": "Returns a list of your tax rates. Tax rates are returned sorted by creation date, with the most recently created tax rates appearing first."
+    },
+    {
+      "operationId": "GetSubscriptionsSubscriptionExposedId",
+      "nn_distance": 0.3334403596388186,
+      "description": "Retrieves the subscription with the given ID."
+    },
+    {
+      "operationId": "GetFiles",
+      "nn_distance": 0.3351985902404794,
+      "description": "Returns a list of the files that your account has access to. Stripe sorts and returns the files by their creation dates, placing the most recently created files at the top."
+    },
+    {
+      "operationId": "GetFilesFile",
+      "nn_distance": 0.3351985902404794,
+      "description": "Retrieves the details of an existing file object. After you supply a unique file ID, Stripe returns the corresponding file object. Learn how to access file contents."
+    },
+    {
+      "operationId": "PostInvoiceitems",
+      "nn_distance": 0.3387549557386056,
+      "description": "Creates an item to be added to a draft invoice (up to 250 items per invoice). If no invoice is specified, the item will be on the next invoice created for the customer specified."
+    },
+    {
+      "operationId": "PostInvoiceitemsInvoiceitem",
+      "nn_distance": 0.3387549557386056,
+      "description": "Updates the amount or description of an invoice item on an upcoming invoice. Updating an invoice item is only possible before the invoice it\u2019s attached to is closed."
+    },
+    {
+      "operationId": "GetBalanceTransactions",
+      "nn_distance": 0.33989302666778465,
+      "description": "Returns a list of transactions that have contributed to the Stripe account balance (e.g., charges, transfers, and so forth). The transactions are returned in sorted order, with the most recent transactions appearing first. Note that this endpoint was previously called \u201cBalance history\u201d and used the path /v1/balance/history."
+    },
+    {
+      "operationId": "GetBalanceTransactionsId",
+      "nn_distance": 0.33989302666778465,
+      "description": "Retrieves the balance transaction with the given ID. Note that this endpoint previously used the path /v1/balance/history/:id."
+    },
+    {
+      "operationId": "PostPricesPrice",
+      "nn_distance": 0.34023055773141253,
+      "description": "Updates the specified price by setting the values of the parameters passed. Any parameters not provided are left unchanged."
+    },
+    {
+      "operationId": "PostProductsId",
+      "nn_distance": 0.34023055773141253,
+      "description": "Updates the specific product by setting the values of the parameters passed. Any parameters not provided will be left unchanged."
+    },
+    {
+      "operationId": "PostCustomers",
+      "nn_distance": 0.34105494524451807,
+      "description": "Creates a new customer object."
+    },
+    {
+      "operationId": "GetCustomersCustomer",
+      "nn_distance": 0.34105494524451807,
+      "description": "Retrieves a Customer object."
+    },
+    {
+      "operationId": "GetCoupons",
+      "nn_distance": 0.3437815585630313,
+      "description": "Returns a list of your coupons."
+    },
+    {
+      "operationId": "PostInvoices",
+      "nn_distance": 0.34778719471739816,
+      "description": "This endpoint creates a draft invoice for a given customer. The invoice remains a draft until you finalize the invoice, which allows you to pay or send the invoice to your customers."
+    },
+    {
+      "operationId": "GetCharges",
+      "nn_distance": 0.3530885087970993,
+      "description": "Returns a list of charges you\u2019ve previously created. The charges are returned in sorted order, with the most recent charges appearing first."
+    },
+    {
+      "operationId": "GetRefunds",
+      "nn_distance": 0.3530885087970993,
+      "description": "Returns a list of all refunds you created. We return the refunds in sorted order, with the most recent refunds appearing first. The 10 most recent refunds are always available by default on the Charge object."
+    },
+    {
+      "operationId": "PostRefundsRefund",
+      "nn_distance": 0.35321356022694417,
+      "description": "Updates the refund that you specify by setting the values of the passed parameters. Any parameters that you don\u2019t provide remain unchanged. This request only accepts metadata as an argument."
+    },
+    {
+      "operationId": "PostTransfersTransfer",
+      "nn_distance": 0.35321356022694417,
+      "description": "Updates the specified transfer by setting the values of the parameters passed. Any parameters not provided will be left unchanged. This request accepts only metadata as an argument."
+    },
+    {
+      "operationId": "PostCharges",
+      "nn_distance": 0.3555074650854195,
+      "description": "This method is no longer recommended\u2014use the Payment Intents API to initiate a new payment instead. Confirmation of the PaymentIntent creates the Charge object used to request payment."
+    },
+    {
+      "operationId": "GetTaxCodes",
+      "nn_distance": 0.3575043075819073,
+      "description": "A list of all tax codes available to add to Products in order to allow specific tax calculations."
+    },
+    {
+      "operationId": "PostPromotionCodes",
+      "nn_distance": 0.35907896995451705,
+      "description": "A promotion code points to an underlying promotion. You can optionally restrict the code to a specific customer, redemption limit, and expiration date."
+    },
+    {
+      "operationId": "PostPromotionCodesPromotionCode",
+      "nn_distance": 0.35907896995451705,
+      "description": "Updates the specified promotion code by setting the values of the parameters passed. Most fields are, by design, not editable."
+    },
+    {
+      "operationId": "PostPaymentMethods",
+      "nn_distance": 0.3594750332949648,
+      "description": "Creates a PaymentMethod object. Read the Stripe.js reference to learn how to create PaymentMethods via Stripe.js. Instead of creating a PaymentMethod directly, we recommend using the PaymentIntents API to accept a payment immediately or the SetupIntent API to collect payment method details ahead of a future payment."
+    },
+    {
+      "operationId": "PostSubscriptions",
+      "nn_distance": 0.35958241525492274,
+      "description": "Creates a new subscription on an existing customer. Each customer can have up to 500 active or scheduled subscriptions. When you create a subscription with collection_method=charge_automatically, the first invoice is finalized as part of the request. The payment_behavior parameter determines the exact behavior of the initial payment. To start subscriptions where the first invoice always begins in a draft status, use subscription schedules instead. Schedules provide the flexibility to model more complex billing configurations that change over time."
+    },
+    {
+      "operationId": "DeleteInvoiceitemsInvoiceitem",
+      "nn_distance": 0.3598987521499333,
+      "description": "Deletes an invoice item, removing it from an invoice. Deleting invoice items is only possible when they\u2019re not attached to invoices, or if it\u2019s attached to a draft invoice."
+    },
+    {
+      "operationId": "DeleteInvoicesInvoice",
+      "nn_distance": 0.3598987521499333,
+      "description": "Permanently deletes a one-off invoice draft. This cannot be undone. Attempts to delete invoices that are no longer in a draft state will fail; once an invoice has been finalized or if an invoice is for a subscription, it must be voided."
+    },
+    {
+      "operationId": "PostLinkAccountSessions",
+      "nn_distance": 0.3618182295784642,
+      "description": "To launch the Financial Connections authorization flow, create a Session. The session\u2019s client_secret can be used to launch the flow using Stripe.js."
+    },
+    {
+      "operationId": "GetQuotes",
+      "nn_distance": 0.3629039827317847,
+      "description": "Returns a list of your quotes."
+    },
+    {
+      "operationId": "GetQuotesQuote",
+      "nn_distance": 0.3629039827317847,
+      "description": "Retrieves the quote with the given ID."
+    },
+    {
+      "operationId": "PostAccountLinks",
+      "nn_distance": 0.36361029681185664,
+      "description": "Creates an AccountLink object that includes a single-use Stripe URL that the platform can redirect their user to in order to take them through the Connect Onboarding flow."
+    },
+    {
+      "operationId": "PostChargesCharge",
+      "nn_distance": 0.3639313440145968,
+      "description": "Updates the specified charge by setting the values of the parameters passed. Any parameters not provided will be left unchanged."
+    },
+    {
+      "operationId": "GetTaxRatesTaxRate",
+      "nn_distance": 0.36557725248950856,
+      "description": "Retrieves a tax rate with the given ID"
+    },
+    {
+      "operationId": "PostProducts",
+      "nn_distance": 0.3663223204311772,
+      "description": "Creates a new product object."
+    },
+    {
+      "operationId": "GetProductsId",
+      "nn_distance": 0.3666392704572803,
+      "description": "Retrieves the details of an existing product. Supply the unique product ID from either a product creation request or the product list, and Stripe will return the corresponding product information."
+    },
+    {
+      "operationId": "GetTaxCodesId",
+      "nn_distance": 0.3666392704572803,
+      "description": "Retrieves the details of an existing tax code. Supply the unique tax code ID and Stripe will return the corresponding tax code information."
+    },
+    {
+      "operationId": "PostCreditNotesId",
+      "nn_distance": 0.36816910839587524,
+      "description": "Updates an existing credit note."
+    },
+    {
+      "operationId": "PostAccountsAccount",
+      "nn_distance": 0.3709864361152013,
+      "description": "Updates a connected account by setting the values of the parameters passed. Any parameters not provided are left unchanged. For accounts where controller.requirement_collection is application, which includes Custom accounts, you can update any information on the account. For accounts where controller.requirement_collection is stripe, which includes Standard and Express accounts, you can update all information until you create an Account Link or Account Session to start Connect onboarding, after which some properties can no longer be updated. To update your own account, use the Dashboard. Refer to our Connect documentation to learn more about updating accounts."
+    },
+    {
+      "operationId": "PostExternalAccountsId",
+      "nn_distance": 0.3709864361152013,
+      "description": "Updates the metadata, account holder name, account holder type of a bank account belonging to a connected account and optionally sets it as the default for its currency. Other bank account details are not editable by design. You can only update bank accounts when account.controller.requirement_collection is application, which includes Custom accounts. You can re-enable a disabled bank account by performing an update call without providing any arguments or changes."
+    },
+    {
+      "operationId": "PostPrices",
+      "nn_distance": 0.3711951330991392,
+      "description": "Creates a new Price for an existing Product. The Price can be recurring or one-time."
+    },
+    {
+      "operationId": "GetChargesCharge",
+      "nn_distance": 0.37649052954827866,
+      "description": "Retrieves the details of a charge that has previously been created. Supply the unique charge ID that was returned from your previous request, and Stripe will return the corresponding charge information. The same information is returned when creating or refunding the charge."
+    },
+    {
+      "operationId": "GetCouponsCoupon",
+      "nn_distance": 0.37652056468413797,
+      "description": "Retrieves the coupon with the given ID."
+    },
+    {
+      "operationId": "GetPricesPrice",
+      "nn_distance": 0.3766929784324259,
+      "description": "Retrieves the price with the given ID."
+    },
+    {
+      "operationId": "GetBalance",
+      "nn_distance": 0.378508205541518,
+      "description": "Retrieves the current account balance, based on the authentication that was used to make the request. For a sample request, see Accounting for negative balances."
+    },
+    {
+      "operationId": "PostCouponsCoupon",
+      "nn_distance": 0.3847067938712079,
+      "description": "Updates the metadata of a coupon. Other coupon details (currency, duration, amount_off) are, by design, not editable."
+    },
+    {
+      "operationId": "PostPayoutsPayout",
+      "nn_distance": 0.38766251142273855,
+      "description": "Updates the specified payout by setting the values of the parameters you pass. We don\u2019t change parameters that you don\u2019t provide. This request only accepts the metadata as arguments."
+    },
+    {
+      "operationId": "PostAccounts",
+      "nn_distance": 0.388480474661303,
+      "description": "With Connect, you can create Stripe accounts for your users. To do this, you\u2019ll first need to register your platform. If you\u2019ve already collected information for your connected accounts, you can prefill that information when creating the account. Connect Onboarding won\u2019t ask for the prefilled information during account onboarding. You can prefill any information on the account."
+    },
+    {
+      "operationId": "GetReviews",
+      "nn_distance": 0.38924023771049054,
+      "description": "Returns a list of Review objects that have open set to true. The objects are sorted in descending order by creation date, with the most recently created object appearing first."
+    },
+    {
+      "operationId": "GetReviewsReview",
+      "nn_distance": 0.38924023771049054,
+      "description": "Retrieves a Review object."
+    },
+    {
+      "operationId": "GetEvents",
+      "nn_distance": 0.3936782205892282,
+      "description": "List events, going back up to 30 days. Each event data is rendered according to Stripe API version at its creation time, specified in event object api_version attribute (not according to your current Stripe API version or Stripe-Version header)."
+    },
+    {
+      "operationId": "GetEventsId",
+      "nn_distance": 0.3936782205892282,
+      "description": "Retrieves the details of an event if it was created in the last 30 days. Supply the unique identifier of the event, which you might have received in a webhook."
+    },
+    {
+      "operationId": "DeleteSubscriptionsSubscriptionExposedId",
+      "nn_distance": 0.39430495924349573,
+      "description": "Cancels a customer\u2019s subscription immediately. The customer won\u2019t be charged again for the subscription. After it\u2019s canceled, you can no longer update the subscription or its metadata. Any pending invoice items that you\u2019ve created are still charged at the end of the period, unless manually deleted. If you\u2019ve set the subscription to cancel at the end of the period, any pending prorations are also left in place and collected at the end of the period. But if the subscription is set to cancel immediately, pending prorations are removed if invoice_now and prorate are both set to true. By default, upon subscription cancellation, Stripe stops automatic collection of all finalized invoices for the customer. This is intended to prevent unexpected payment attempts after the customer has canceled a subscription. However, you can resume automatic collection of the invoices manually after subscription cancellation to have us proceed. Or, you could check for unpaid invoices before allowing the customer to cancel the subscription at all."
+    },
+    {
+      "operationId": "PostSubscriptionsSubscriptionExposedId",
+      "nn_distance": 0.39430495924349573,
+      "description": "Updates an existing subscription to match the specified parameters. When changing prices or quantities, we optionally prorate the price we charge next month to make up for any price changes. To preview how the proration is calculated, use the create preview endpoint. By default, we prorate subscription changes. For example, if a customer signs up on May 1 for a 100 price, they\u2019ll be billed 100 immediately. If on May 15 they switch to a 200 price, then on June 1 they\u2019ll be billed 250 (200 for a renewal of her subscription, plus a 50 prorating adjustment for half of the previous month\u2019s 100 difference). Similarly, a downgrade generates a credit that is applied to the next invoice. We also prorate when you make quantity changes. Switching prices does not normally change the billing date or generate an immediate charge unless: The billing interval is changed (for example, from monthly to yearly). The subscription moves from free to paid. A trial starts or ends. In these cases, we apply a credit for the unused time on the previous price, immediately charge the customer using the new price, and reset the billing date. Learn about how Stripe immediately attempts payment for subscription changes. If you want to charge for an upgrade immediately, pass proration_behavior as always_invoice to create prorations, automatically invoice the customer for those proration adjustments, and attempt to collect payment. If you pass create_prorations, the prorations are created but not automatically invoiced. If you want to bill the customer for the prorations before the subscription\u2019s renewal date, you need to manually invoice the customer. If you don\u2019t want to prorate, set the proration_behavior option to none. With this option, the customer is billed 100 on May 1 and 200 on June 1. Similarly, if you set proration_behavior to none when switching between different billing intervals (for example, from monthly to yearly), we don\u2019t generate any credits for the old subscription\u2019s unused time. We still reset the billing date and bill immediately for the new subscription. Updating the quantity on a subscription many times in an hour may result in rate limiting. If you need to bill for a frequently changing quantity, consider integrating usage-based billing instead."
+    },
+    {
+      "operationId": "PostRefunds",
+      "nn_distance": 0.39493179205764983,
+      "description": "When you create a new refund, you must specify a Charge or a PaymentIntent object on which to create it. Creating a new refund will refund a charge that has previously been created but not yet refunded. Funds will be refunded to the credit or debit card that was originally charged. You can optionally refund only part of a charge. You can do so multiple times, until the entire charge has been refunded. Once entirely refunded, a charge can\u2019t be refunded again. This method will raise an error when called on an already-refunded charge, or when trying to refund more money than is left on a charge."
+    },
+    {
+      "operationId": "GetTransfersTransfer",
+      "nn_distance": 0.3963091041805553,
+      "description": "Retrieves the details of an existing transfer. Supply the unique transfer ID from either a transfer creation request or the transfer list, and Stripe will return the corresponding transfer information."
+    },
+    {
+      "operationId": "GetAccounts",
+      "nn_distance": 0.39652751389785823,
+      "description": "Returns a list of accounts connected to your platform via Connect. If you\u2019re not a platform, the list is empty."
+    },
+    {
+      "operationId": "PostCustomersCustomer",
+      "nn_distance": 0.3980620198670327,
+      "description": "Updates the specified customer by setting the values of the parameters passed. Any parameters not provided will be left unchanged. For example, if you pass the source parameter, that becomes the customer\u2019s active source (e.g., a card) to be used for all charges in the future. When you update a customer to a new valid card source by passing the source parameter: for each of the customer\u2019s current subscriptions, if the subscription bills automatically and is in the past_due state, then the latest open invoice for the subscription with automatic collection enabled will be retried. This retry will not count as an automatic retry, and will not affect the next regularly scheduled payment for the invoice. Changing the default_source for a customer will not trigger this behavior. This request accepts mostly the same arguments as the customer creation call."
+    },
+    {
+      "operationId": "PostSourcesSource",
+      "nn_distance": 0.3980620198670327,
+      "description": "Updates the specified source by setting the values of the parameters passed. Any parameters not provided will be left unchanged. This request accepts the metadata and owner as arguments. It is also possible to update type specific information for selected payment methods. Please refer to our payment method guides for more detail."
+    },
+    {
+      "operationId": "GetRefundsRefund",
+      "nn_distance": 0.40466803246129657,
+      "description": "Retrieves the details of an existing refund."
+    },
+    {
+      "operationId": "GetSubscriptions",
+      "nn_distance": 0.4085858616501151,
+      "description": "By default, returns a list of subscriptions that have not been canceled. In order to list canceled subscriptions, specify status=canceled."
+    },
+    {
+      "operationId": "PostInvoicesInvoice",
+      "nn_distance": 0.41478287303978834,
+      "description": "Draft invoices are fully editable. Once an invoice is finalized, monetary values, as well as collection_method, become uneditable. If you would like to stop the Stripe Billing engine from automatically finalizing, reattempting payments on, sending reminders for, or automatically reconciling invoices, pass auto_advance=false."
+    },
+    {
+      "operationId": "GetSourcesSource",
+      "nn_distance": 0.4166891249929364,
+      "description": "Retrieves an existing source object. Supply the unique source ID from a source creation request and Stripe will return the corresponding up-to-date source object information."
+    },
+    {
+      "operationId": "PostCreditNotes",
+      "nn_distance": 0.42103241058927177,
+      "description": "Issue a credit note to adjust the amount of a finalized invoice. A credit note will first reduce the invoice\u2019s amount_remaining (and amount_due), but not below zero. This amount is indicated by the credit note\u2019s pre_payment_amount. The excess amount is indicated by post_payment_amount, and it can result in any combination of the following: Refunds: create a new refund (using refund_amount) or link existing refunds (using refunds). Customer balance credit: credit the customer\u2019s balance (using credit_amount) which will be automatically applied to their next invoice when it\u2019s finalized. Outside of Stripe credit: record the amount that is or will be credited outside of Stripe (using out_of_band_amount). The sum of refunds, customer balance credits, and outside of Stripe credits must equal the post_payment_amount. You may issue multiple credit notes for an invoice. Each credit note may increment the invoice\u2019s pre_payment_credit_notes_amount, post_payment_credit_notes_amount, or both, depending on the invoice\u2019s amount_remaining at the time of credit note creation."
+    },
+    {
+      "operationId": "DeleteAccountsAccount",
+      "nn_distance": 0.42560614263880114,
+      "description": "With Connect, you can delete accounts you manage. Test-mode accounts can be deleted at any time. Live-mode accounts that have access to the standard dashboard and Stripe is responsible for negative account balances cannot be deleted, which includes Standard accounts. All other Live-mode accounts, can be deleted when all balances are zero. If you want to delete your own account, use the account information tab in your account settings instead."
+    },
+    {
+      "operationId": "DeleteWebhookEndpointsWebhookEndpoint",
+      "nn_distance": 0.43136366052393404,
+      "description": "You can also delete webhook endpoints via the webhook endpoint management page of the Stripe dashboard."
+    },
+    {
+      "operationId": "GetTransfers",
+      "nn_distance": 0.4335408087071263,
+      "description": "Returns a list of existing transfers sent to connected accounts. The transfers are returned in sorted order, with the most recently created transfers appearing first."
+    },
+    {
+      "operationId": "PostSources",
+      "nn_distance": 0.43454578497896834,
+      "description": "Creates a new source object."
+    },
+    {
+      "operationId": "PostPlansPlan",
+      "nn_distance": 0.4352822266576807,
+      "description": "Updates the specified plan by setting the values of the parameters passed. Any parameters not provided are left unchanged. By design, you cannot change a plan\u2019s ID, amount, currency, or billing cycle."
+    },
+    {
+      "operationId": "GetPrices",
+      "nn_distance": 0.43729955917091634,
+      "description": "Returns a list of your active prices, excluding inline prices. For the list of inactive prices, set active to false."
+    },
+    {
+      "operationId": "DeleteCustomersCustomer",
+      "nn_distance": 0.4379614435104737,
+      "description": "Permanently deletes a customer. It cannot be undone. Also immediately cancels any active subscriptions on the customer."
+    },
+    {
+      "operationId": "PostFiles",
+      "nn_distance": 0.4397476547210559,
+      "description": "To upload a file to Stripe, you need to send a request of type multipart/form-data. Include the file you want to upload in the request, and the parameters for creating a file. All of Stripe\u2019s officially supported Client libraries support sending multipart/form-data."
+    },
+    {
+      "operationId": "DeleteProductsId",
+      "nn_distance": 0.44046147707670824,
+      "description": "Delete a product. Deleting a product is only possible if it has no prices associated with it. Additionally, deleting a product with type=good is only possible if it has no SKUs associated with it."
+    },
+    {
+      "operationId": "GetPaymentMethods",
+      "nn_distance": 0.444942930746716,
+      "description": "Returns a list of PaymentMethods for Treasury flows. If you want to list the PaymentMethods attached to a Customer for payments, you should use the List a Customer\u2019s PaymentMethods API instead."
+    },
+    {
+      "operationId": "GetPaymentMethodsPaymentMethod",
+      "nn_distance": 0.444942930746716,
+      "description": "Retrieves a PaymentMethod object attached to the StripeAccount. To retrieve a payment method attached to a Customer, you should use Retrieve a Customer\u2019s PaymentMethods"
+    },
+    {
+      "operationId": "PostPlans",
+      "nn_distance": 0.467519727415309,
+      "description": "You can now model subscriptions more flexibly using the Prices API. It replaces the Plans API and is backwards compatible to simplify your migration."
+    },
+    {
+      "operationId": "DeletePlansPlan",
+      "nn_distance": 0.467519727415309,
+      "description": "Deleting plans means new subscribers can\u2019t be added. Existing subscribers aren\u2019t affected."
+    },
+    {
+      "operationId": "PostTokens",
+      "nn_distance": 0.4792918370930108,
+      "description": "Creates a single-use token that represents a bank account\u2019s details. You can use this token with any v1 API method in place of a bank account dictionary. You can only use this token once. To do so, attach it to a connected account where controller.requirement_collection is application, which includes Custom accounts."
+    },
+    {
+      "operationId": "GetInvoicePayments",
+      "nn_distance": 0.48256204961153193,
+      "description": "When retrieving an invoice, there is an includable payments property containing the first handful of those items. There is also a URL where you can retrieve the full (paginated) list of payments."
+    },
+    {
+      "operationId": "GetTokensToken",
+      "nn_distance": 0.48877936094783814,
+      "description": "Retrieves the token with the given ID."
+    },
+    {
+      "operationId": "PostDisputesDispute",
+      "nn_distance": 0.49584511235695394,
+      "description": "When you get a dispute, contacting your customer is always the best first step. If that doesn\u2019t work, you can submit evidence to help us resolve the dispute in your favor. You can do this in your dashboard, but if you prefer, you can use the API to submit evidence programmatically. Depending on your dispute type, different evidence fields will give you a better chance of winning your dispute. To figure out which evidence fields to provide, see our guide to dispute types."
+    },
+    {
+      "operationId": "GetConfirmationTokensConfirmationToken",
+      "nn_distance": 0.5383249660494702,
+      "description": "Retrieves an existing ConfirmationToken object"
+    },
+    {
+      "operationId": "GetMandatesMandate",
+      "nn_distance": 0.5646312986952762,
+      "description": "Retrieves a Mandate object."
+    }
+  ],
+  "knn_k3_distances": [
+    {
+      "operationId": "GetAccount",
+      "knn_k3_distance": 0.27921969672392005
+    },
+    {
+      "operationId": "PostAccountLinks",
+      "knn_k3_distance": 0.39191635763639593
+    },
+    {
+      "operationId": "PostAccountSessions",
+      "knn_k3_distance": 0.3646963459635281
+    },
+    {
+      "operationId": "GetAccounts",
+      "knn_k3_distance": 0.4460525969433527
+    },
+    {
+      "operationId": "PostAccounts",
+      "knn_k3_distance": 0.4177396107822707
+    },
+    {
+      "operationId": "DeleteAccountsAccount",
+      "knn_k3_distance": 0.47465705148939064
+    },
+    {
+      "operationId": "GetAccountsAccount",
+      "knn_k3_distance": 0.26625824774851853
+    },
+    {
+      "operationId": "PostAccountsAccount",
+      "knn_k3_distance": 0.41707767266234375
+    },
+    {
+      "operationId": "GetApplicationFees",
+      "knn_k3_distance": 0.39941569018313877
+    },
+    {
+      "operationId": "GetApplicationFeesId",
+      "knn_k3_distance": 0.437528242981966
+    },
+    {
+      "operationId": "GetBalance",
+      "knn_k3_distance": 0.4401654260432588
+    },
+    {
+      "operationId": "GetBalanceSettings",
+      "knn_k3_distance": 0.3302439048058042
+    },
+    {
+      "operationId": "PostBalanceSettings",
+      "knn_k3_distance": 0.35755838078173047
+    },
+    {
+      "operationId": "GetBalanceTransactions",
+      "knn_k3_distance": 0.4196871091647855
+    },
+    {
+      "operationId": "GetBalanceTransactionsId",
+      "knn_k3_distance": 0.45196695794673564
+    },
+    {
+      "operationId": "GetCharges",
+      "knn_k3_distance": 0.37904632780014574
+    },
+    {
+      "operationId": "PostCharges",
+      "knn_k3_distance": 0.3885654160168677
+    },
+    {
+      "operationId": "GetChargesCharge",
+      "knn_k3_distance": 0.38787598767403625
+    },
+    {
+      "operationId": "PostChargesCharge",
+      "knn_k3_distance": 0.42006885802957905
+    },
+    {
+      "operationId": "GetConfirmationTokensConfirmationToken",
+      "knn_k3_distance": 0.5766297369802734
+    },
+    {
+      "operationId": "GetCountrySpecs",
+      "knn_k3_distance": 0.4949438035089287
+    },
+    {
+      "operationId": "GetCountrySpecsCountry",
+      "knn_k3_distance": 0.5550580618098525
+    },
+    {
+      "operationId": "GetCoupons",
+      "knn_k3_distance": 0.3775075120670807
+    },
+    {
+      "operationId": "PostCoupons",
+      "knn_k3_distance": 0.42594321720673767
+    },
+    {
+      "operationId": "DeleteCouponsCoupon",
+      "knn_k3_distance": 0.4108005341608137
+    },
+    {
+      "operationId": "GetCouponsCoupon",
+      "knn_k3_distance": 0.4142026108904899
+    },
+    {
+      "operationId": "PostCouponsCoupon",
+      "knn_k3_distance": 0.433537249994342
+    },
+    {
+      "operationId": "GetCreditNotes",
+      "knn_k3_distance": 0.41693062177420687
+    },
+    {
+      "operationId": "PostCreditNotes",
+      "knn_k3_distance": 0.4674120138463387
+    },
+    {
+      "operationId": "GetCreditNotesId",
+      "knn_k3_distance": 0.3929889729617468
+    },
+    {
+      "operationId": "PostCreditNotesId",
+      "knn_k3_distance": 0.4148467069327449
+    },
+    {
+      "operationId": "PostCustomerSessions",
+      "knn_k3_distance": 0.38682179540371814
+    },
+    {
+      "operationId": "GetCustomers",
+      "knn_k3_distance": 0.3632059143691424
+    },
+    {
+      "operationId": "PostCustomers",
+      "knn_k3_distance": 0.36279665634576874
+    },
+    {
+      "operationId": "DeleteCustomersCustomer",
+      "knn_k3_distance": 0.46941925954220515
+    },
+    {
+      "operationId": "GetCustomersCustomer",
+      "knn_k3_distance": 0.4031547999793559
+    },
+    {
+      "operationId": "PostCustomersCustomer",
+      "knn_k3_distance": 0.4487613737446641
+    },
+    {
+      "operationId": "GetDisputes",
+      "knn_k3_distance": 0.4229142114987048
+    },
+    {
+      "operationId": "GetDisputesDispute",
+      "knn_k3_distance": 0.4148353563427672
+    },
+    {
+      "operationId": "PostDisputesDispute",
+      "knn_k3_distance": 0.5770176050057808
+    },
+    {
+      "operationId": "PostEphemeralKeys",
+      "knn_k3_distance": 0.5034022797476383
+    },
+    {
+      "operationId": "DeleteEphemeralKeysKey",
+      "knn_k3_distance": 0.5171101937599826
+    },
+    {
+      "operationId": "GetEvents",
+      "knn_k3_distance": 0.4805867914678024
+    },
+    {
+      "operationId": "GetEventsId",
+      "knn_k3_distance": 0.4983355569730312
+    },
+    {
+      "operationId": "GetExchangeRates",
+      "knn_k3_distance": 0.4468269089327337
+    },
+    {
+      "operationId": "GetExchangeRatesRateId",
+      "knn_k3_distance": 0.4409452122900334
+    },
+    {
+      "operationId": "PostExternalAccountsId",
+      "knn_k3_distance": 0.4729311619308969
+    },
+    {
+      "operationId": "GetFileLinks",
+      "knn_k3_distance": 0.37535018985074126
+    },
+    {
+      "operationId": "PostFileLinks",
+      "knn_k3_distance": 0.3866489995882157
+    },
+    {
+      "operationId": "GetFileLinksLink",
+      "knn_k3_distance": 0.39246471021804746
+    },
+    {
+      "operationId": "PostFileLinksLink",
+      "knn_k3_distance": 0.388883544436518
+    },
+    {
+      "operationId": "GetFiles",
+      "knn_k3_distance": 0.4138131332705089
+    },
+    {
+      "operationId": "PostFiles",
+      "knn_k3_distance": 0.46800442802664827
+    },
+    {
+      "operationId": "GetFilesFile",
+      "knn_k3_distance": 0.4110904356254208
+    },
+    {
+      "operationId": "GetInvoicePayments",
+      "knn_k3_distance": 0.4903913361744994
+    },
+    {
+      "operationId": "GetInvoicePaymentsInvoicePayment",
+      "knn_k3_distance": 0.29954656340575975
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplates",
+      "knn_k3_distance": 0.35679345771425747
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplatesTemplate",
+      "knn_k3_distance": 0.38999080730873686
+    },
+    {
+      "operationId": "GetInvoiceitems",
+      "knn_k3_distance": 0.35472857444812117
+    },
+    {
+      "operationId": "PostInvoiceitems",
+      "knn_k3_distance": 0.3570651672425307
+    },
+    {
+      "operationId": "DeleteInvoiceitemsInvoiceitem",
+      "knn_k3_distance": 0.3755606548830057
+    },
+    {
+      "operationId": "GetInvoiceitemsInvoiceitem",
+      "knn_k3_distance": 0.2470444173957875
+    },
+    {
+      "operationId": "PostInvoiceitemsInvoiceitem",
+      "knn_k3_distance": 0.3994252465576249
+    },
+    {
+      "operationId": "GetInvoices",
+      "knn_k3_distance": 0.363899154566438
+    },
+    {
+      "operationId": "PostInvoices",
+      "knn_k3_distance": 0.4038763803771361
+    },
+    {
+      "operationId": "DeleteInvoicesInvoice",
+      "knn_k3_distance": 0.4232414566385094
+    },
+    {
+      "operationId": "GetInvoicesInvoice",
+      "knn_k3_distance": 0.2781277651355148
+    },
+    {
+      "operationId": "PostInvoicesInvoice",
+      "knn_k3_distance": 0.45324068317508964
+    },
+    {
+      "operationId": "PostLinkAccountSessions",
+      "knn_k3_distance": 0.39798261497952553
+    },
+    {
+      "operationId": "GetLinkAccountSessionsSession",
+      "knn_k3_distance": 0.3423490255239452
+    },
+    {
+      "operationId": "GetLinkedAccounts",
+      "knn_k3_distance": 0.33311428801356935
+    },
+    {
+      "operationId": "GetLinkedAccountsAccount",
+      "knn_k3_distance": 0.24173501596435362
+    },
+    {
+      "operationId": "GetMandatesMandate",
+      "knn_k3_distance": 0.588433621328574
+    },
+    {
+      "operationId": "GetPaymentIntents",
+      "knn_k3_distance": 0.3275492247025373
+    },
+    {
+      "operationId": "PostPaymentIntents",
+      "knn_k3_distance": 0.28162832706373847
+    },
+    {
+      "operationId": "GetPaymentIntentsIntent",
+      "knn_k3_distance": 0.296517274411531
+    },
+    {
+      "operationId": "PostPaymentIntentsIntent",
+      "knn_k3_distance": 0.3265704009646643
+    },
+    {
+      "operationId": "GetPaymentLinks",
+      "knn_k3_distance": 0.30103588902444733
+    },
+    {
+      "operationId": "PostPaymentLinks",
+      "knn_k3_distance": 0.2721518426690481
+    },
+    {
+      "operationId": "GetPaymentLinksPaymentLink",
+      "knn_k3_distance": 0.2629730532589559
+    },
+    {
+      "operationId": "PostPaymentLinksPaymentLink",
+      "knn_k3_distance": 0.28666271834987406
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurations",
+      "knn_k3_distance": 0.2628125792101749
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurations",
+      "knn_k3_distance": 0.2463905112805922
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurationsConfiguration",
+      "knn_k3_distance": 0.23240641866064035
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurationsConfiguration",
+      "knn_k3_distance": 0.2546541304731017
+    },
+    {
+      "operationId": "GetPaymentMethodDomains",
+      "knn_k3_distance": 0.21981947951224987
+    },
+    {
+      "operationId": "PostPaymentMethodDomains",
+      "knn_k3_distance": 0.23920447702324601
+    },
+    {
+      "operationId": "GetPaymentMethodDomainsPaymentMethodDomain",
+      "knn_k3_distance": 0.20841389935068588
+    },
+    {
+      "operationId": "PostPaymentMethodDomainsPaymentMethodDomain",
+      "knn_k3_distance": 0.23710309157356113
+    },
+    {
+      "operationId": "GetPaymentMethods",
+      "knn_k3_distance": 0.4611204076677089
+    },
+    {
+      "operationId": "PostPaymentMethods",
+      "knn_k3_distance": 0.3951894344922821
+    },
+    {
+      "operationId": "GetPaymentMethodsPaymentMethod",
+      "knn_k3_distance": 0.45437739461604404
+    },
+    {
+      "operationId": "PostPaymentMethodsPaymentMethod",
+      "knn_k3_distance": 0.3264160491982527
+    },
+    {
+      "operationId": "GetPayouts",
+      "knn_k3_distance": 0.3882159608948908
+    },
+    {
+      "operationId": "PostPayouts",
+      "knn_k3_distance": 0.3842939403440508
+    },
+    {
+      "operationId": "GetPayoutsPayout",
+      "knn_k3_distance": 0.3844844935918131
+    },
+    {
+      "operationId": "PostPayoutsPayout",
+      "knn_k3_distance": 0.4142542490703303
+    },
+    {
+      "operationId": "GetPlans",
+      "knn_k3_distance": 0.39990476350113396
+    },
+    {
+      "operationId": "PostPlans",
+      "knn_k3_distance": 0.48576572193786216
+    },
+    {
+      "operationId": "DeletePlansPlan",
+      "knn_k3_distance": 0.48831851269943666
+    },
+    {
+      "operationId": "GetPlansPlan",
+      "knn_k3_distance": 0.412158655638276
+    },
+    {
+      "operationId": "PostPlansPlan",
+      "knn_k3_distance": 0.45805541824915935
+    },
+    {
+      "operationId": "GetPrices",
+      "knn_k3_distance": 0.500154521253792
+    },
+    {
+      "operationId": "PostPrices",
+      "knn_k3_distance": 0.41576437128158333
+    },
+    {
+      "operationId": "GetPricesPrice",
+      "knn_k3_distance": 0.39841741732075775
+    },
+    {
+      "operationId": "PostPricesPrice",
+      "knn_k3_distance": 0.36654349038411693
+    },
+    {
+      "operationId": "GetProducts",
+      "knn_k3_distance": 0.39204044709296637
+    },
+    {
+      "operationId": "PostProducts",
+      "knn_k3_distance": 0.3901474488531254
+    },
+    {
+      "operationId": "DeleteProductsId",
+      "knn_k3_distance": 0.46343313370822137
+    },
+    {
+      "operationId": "GetProductsId",
+      "knn_k3_distance": 0.40403289075494153
+    },
+    {
+      "operationId": "PostProductsId",
+      "knn_k3_distance": 0.39967049294858786
+    },
+    {
+      "operationId": "GetPromotionCodes",
+      "knn_k3_distance": 0.3365013411897084
+    },
+    {
+      "operationId": "PostPromotionCodes",
+      "knn_k3_distance": 0.38267455789869625
+    },
+    {
+      "operationId": "GetPromotionCodesPromotionCode",
+      "knn_k3_distance": 0.3484057291928127
+    },
+    {
+      "operationId": "PostPromotionCodesPromotionCode",
+      "knn_k3_distance": 0.39905434052394684
+    },
+    {
+      "operationId": "GetQuotes",
+      "knn_k3_distance": 0.40582035786759363
+    },
+    {
+      "operationId": "PostQuotes",
+      "knn_k3_distance": 0.39276170193672416
+    },
+    {
+      "operationId": "GetQuotesQuote",
+      "knn_k3_distance": 0.3915171521908823
+    },
+    {
+      "operationId": "PostQuotesQuote",
+      "knn_k3_distance": 0.3897939807751307
+    },
+    {
+      "operationId": "GetRefunds",
+      "knn_k3_distance": 0.3864358655266355
+    },
+    {
+      "operationId": "PostRefunds",
+      "knn_k3_distance": 0.4133888285307026
+    },
+    {
+      "operationId": "GetRefundsRefund",
+      "knn_k3_distance": 0.43680347782762335
+    },
+    {
+      "operationId": "PostRefundsRefund",
+      "knn_k3_distance": 0.3903130603618367
+    },
+    {
+      "operationId": "GetReviews",
+      "knn_k3_distance": 0.4762733860408647
+    },
+    {
+      "operationId": "GetReviewsReview",
+      "knn_k3_distance": 0.47736754017951916
+    },
+    {
+      "operationId": "GetSetupAttempts",
+      "knn_k3_distance": 0.3499200540883282
+    },
+    {
+      "operationId": "GetSetupIntents",
+      "knn_k3_distance": 0.2753170386237835
+    },
+    {
+      "operationId": "PostSetupIntents",
+      "knn_k3_distance": 0.3106862529162203
+    },
+    {
+      "operationId": "GetSetupIntentsIntent",
+      "knn_k3_distance": 0.30499291352928903
+    },
+    {
+      "operationId": "PostSetupIntentsIntent",
+      "knn_k3_distance": 0.34652388493343667
+    },
+    {
+      "operationId": "GetShippingRates",
+      "knn_k3_distance": 0.3874477145600909
+    },
+    {
+      "operationId": "PostShippingRates",
+      "knn_k3_distance": 0.34301796550434477
+    },
+    {
+      "operationId": "GetShippingRatesShippingRateToken",
+      "knn_k3_distance": 0.35626713808010185
+    },
+    {
+      "operationId": "PostShippingRatesShippingRateToken",
+      "knn_k3_distance": 0.2949132748141838
+    },
+    {
+      "operationId": "PostSources",
+      "knn_k3_distance": 0.49147170392879264
+    },
+    {
+      "operationId": "GetSourcesSource",
+      "knn_k3_distance": 0.4489386034664726
+    },
+    {
+      "operationId": "PostSourcesSource",
+      "knn_k3_distance": 0.426902406716923
+    },
+    {
+      "operationId": "GetSubscriptionItems",
+      "knn_k3_distance": 0.336141828454443
+    },
+    {
+      "operationId": "PostSubscriptionItems",
+      "knn_k3_distance": 0.32658122246118143
+    },
+    {
+      "operationId": "DeleteSubscriptionItemsItem",
+      "knn_k3_distance": 0.34704080896349404
+    },
+    {
+      "operationId": "GetSubscriptionItemsItem",
+      "knn_k3_distance": 0.2946210151996929
+    },
+    {
+      "operationId": "PostSubscriptionItemsItem",
+      "knn_k3_distance": 0.3393690823681316
+    },
+    {
+      "operationId": "GetSubscriptionSchedules",
+      "knn_k3_distance": 0.3233958257803167
+    },
+    {
+      "operationId": "PostSubscriptionSchedules",
+      "knn_k3_distance": 0.326444127421431
+    },
+    {
+      "operationId": "GetSubscriptionSchedulesSchedule",
+      "knn_k3_distance": 0.3259526722012169
+    },
+    {
+      "operationId": "PostSubscriptionSchedulesSchedule",
+      "knn_k3_distance": 0.30911657324521297
+    },
+    {
+      "operationId": "GetSubscriptions",
+      "knn_k3_distance": 0.43656866873450845
+    },
+    {
+      "operationId": "PostSubscriptions",
+      "knn_k3_distance": 0.4285472770088068
+    },
+    {
+      "operationId": "DeleteSubscriptionsSubscriptionExposedId",
+      "knn_k3_distance": 0.4367172812649618
+    },
+    {
+      "operationId": "GetSubscriptionsSubscriptionExposedId",
+      "knn_k3_distance": 0.4327479611183511
+    },
+    {
+      "operationId": "PostSubscriptionsSubscriptionExposedId",
+      "knn_k3_distance": 0.4178775130655916
+    },
+    {
+      "operationId": "GetTaxCodes",
+      "knn_k3_distance": 0.391398638914898
+    },
+    {
+      "operationId": "GetTaxCodesId",
+      "knn_k3_distance": 0.3754295053855985
+    },
+    {
+      "operationId": "GetTaxIds",
+      "knn_k3_distance": 0.3301693296690471
+    },
+    {
+      "operationId": "PostTaxIds",
+      "knn_k3_distance": 0.30144192249299523
+    },
+    {
+      "operationId": "DeleteTaxIdsId",
+      "knn_k3_distance": 0.30897298143475843
+    },
+    {
+      "operationId": "GetTaxIdsId",
+      "knn_k3_distance": 0.2538614138978548
+    },
+    {
+      "operationId": "GetTaxRates",
+      "knn_k3_distance": 0.3669443923873253
+    },
+    {
+      "operationId": "PostTaxRates",
+      "knn_k3_distance": 0.30184658124784663
+    },
+    {
+      "operationId": "GetTaxRatesTaxRate",
+      "knn_k3_distance": 0.37730235453201844
+    },
+    {
+      "operationId": "PostTaxRatesTaxRate",
+      "knn_k3_distance": 0.31386161970668447
+    },
+    {
+      "operationId": "PostTokens",
+      "knn_k3_distance": 0.5238238243688907
+    },
+    {
+      "operationId": "GetTokensToken",
+      "knn_k3_distance": 0.49315906669632376
+    },
+    {
+      "operationId": "GetTopups",
+      "knn_k3_distance": 0.3797250320509263
+    },
+    {
+      "operationId": "PostTopups",
+      "knn_k3_distance": 0.388537379244356
+    },
+    {
+      "operationId": "GetTopupsTopup",
+      "knn_k3_distance": 0.37001869433355844
+    },
+    {
+      "operationId": "PostTopupsTopup",
+      "knn_k3_distance": 0.36379824820428075
+    },
+    {
+      "operationId": "GetTransfers",
+      "knn_k3_distance": 0.44985576192459176
+    },
+    {
+      "operationId": "PostTransfers",
+      "knn_k3_distance": 0.40020169531632255
+    },
+    {
+      "operationId": "GetTransfersTransfer",
+      "knn_k3_distance": 0.4064411021978676
+    },
+    {
+      "operationId": "PostTransfersTransfer",
+      "knn_k3_distance": 0.3907843661821601
+    },
+    {
+      "operationId": "GetWebhookEndpoints",
+      "knn_k3_distance": 0.3685207844578254
+    },
+    {
+      "operationId": "PostWebhookEndpoints",
+      "knn_k3_distance": 0.4178598113257106
+    },
+    {
+      "operationId": "DeleteWebhookEndpointsWebhookEndpoint",
+      "knn_k3_distance": 0.45955416112366004
+    },
+    {
+      "operationId": "GetWebhookEndpointsWebhookEndpoint",
+      "knn_k3_distance": 0.3956824391351612
+    },
+    {
+      "operationId": "PostWebhookEndpointsWebhookEndpoint",
+      "knn_k3_distance": 0.36691825468299405
+    }
+  ],
+  "knn_k5_distances": [
+    {
+      "operationId": "GetAccount",
+      "knn_k5_distance": 0.3628265416007013
+    },
+    {
+      "operationId": "PostAccountLinks",
+      "knn_k5_distance": 0.4270161060046903
+    },
+    {
+      "operationId": "PostAccountSessions",
+      "knn_k5_distance": 0.414786070359111
+    },
+    {
+      "operationId": "GetAccounts",
+      "knn_k5_distance": 0.4668382480259832
+    },
+    {
+      "operationId": "PostAccounts",
+      "knn_k5_distance": 0.4438281277540078
+    },
+    {
+      "operationId": "DeleteAccountsAccount",
+      "knn_k5_distance": 0.4970569697702135
+    },
+    {
+      "operationId": "GetAccountsAccount",
+      "knn_k5_distance": 0.35445738258244186
+    },
+    {
+      "operationId": "PostAccountsAccount",
+      "knn_k5_distance": 0.44225142365408876
+    },
+    {
+      "operationId": "GetApplicationFees",
+      "knn_k5_distance": 0.4577361783087376
+    },
+    {
+      "operationId": "GetApplicationFeesId",
+      "knn_k5_distance": 0.4900456806161886
+    },
+    {
+      "operationId": "GetBalance",
+      "knn_k5_distance": 0.4617390529715073
+    },
+    {
+      "operationId": "GetBalanceSettings",
+      "knn_k5_distance": 0.3986663175844146
+    },
+    {
+      "operationId": "PostBalanceSettings",
+      "knn_k5_distance": 0.4179779542653231
+    },
+    {
+      "operationId": "GetBalanceTransactions",
+      "knn_k5_distance": 0.4517778311619674
+    },
+    {
+      "operationId": "GetBalanceTransactionsId",
+      "knn_k5_distance": 0.4908622309281413
+    },
+    {
+      "operationId": "GetCharges",
+      "knn_k5_distance": 0.3986622628869321
+    },
+    {
+      "operationId": "PostCharges",
+      "knn_k5_distance": 0.41063809466512086
+    },
+    {
+      "operationId": "GetChargesCharge",
+      "knn_k5_distance": 0.41602474856622307
+    },
+    {
+      "operationId": "PostChargesCharge",
+      "knn_k5_distance": 0.44644094801931933
+    },
+    {
+      "operationId": "GetConfirmationTokensConfirmationToken",
+      "knn_k5_distance": 0.6001266474871956
+    },
+    {
+      "operationId": "GetCountrySpecs",
+      "knn_k5_distance": 0.557910481108755
+    },
+    {
+      "operationId": "GetCountrySpecsCountry",
+      "knn_k5_distance": 0.6174633009276201
+    },
+    {
+      "operationId": "GetCoupons",
+      "knn_k5_distance": 0.4197712177702675
+    },
+    {
+      "operationId": "PostCoupons",
+      "knn_k5_distance": 0.48024847103621965
+    },
+    {
+      "operationId": "DeleteCouponsCoupon",
+      "knn_k5_distance": 0.4621329688521545
+    },
+    {
+      "operationId": "GetCouponsCoupon",
+      "knn_k5_distance": 0.42837169714935425
+    },
+    {
+      "operationId": "PostCouponsCoupon",
+      "knn_k5_distance": 0.4546302677379341
+    },
+    {
+      "operationId": "GetCreditNotes",
+      "knn_k5_distance": 0.45344685819288166
+    },
+    {
+      "operationId": "PostCreditNotes",
+      "knn_k5_distance": 0.48365929217623743
+    },
+    {
+      "operationId": "GetCreditNotesId",
+      "knn_k5_distance": 0.4430377369267572
+    },
+    {
+      "operationId": "PostCreditNotesId",
+      "knn_k5_distance": 0.4434443144755587
+    },
+    {
+      "operationId": "PostCustomerSessions",
+      "knn_k5_distance": 0.4519306112802902
+    },
+    {
+      "operationId": "GetCustomers",
+      "knn_k5_distance": 0.389704677927799
+    },
+    {
+      "operationId": "PostCustomers",
+      "knn_k5_distance": 0.39635316187332575
+    },
+    {
+      "operationId": "DeleteCustomersCustomer",
+      "knn_k5_distance": 0.48403963615824563
+    },
+    {
+      "operationId": "GetCustomersCustomer",
+      "knn_k5_distance": 0.44371640321240624
+    },
+    {
+      "operationId": "PostCustomersCustomer",
+      "knn_k5_distance": 0.4649743732024369
+    },
+    {
+      "operationId": "GetDisputes",
+      "knn_k5_distance": 0.4537733411871363
+    },
+    {
+      "operationId": "GetDisputesDispute",
+      "knn_k5_distance": 0.4407045188999885
+    },
+    {
+      "operationId": "PostDisputesDispute",
+      "knn_k5_distance": 0.6267252269940511
+    },
+    {
+      "operationId": "PostEphemeralKeys",
+      "knn_k5_distance": 0.5545189235818379
+    },
+    {
+      "operationId": "DeleteEphemeralKeysKey",
+      "knn_k5_distance": 0.5782602659711739
+    },
+    {
+      "operationId": "GetEvents",
+      "knn_k5_distance": 0.5150180998740133
+    },
+    {
+      "operationId": "GetEventsId",
+      "knn_k5_distance": 0.5347407563605736
+    },
+    {
+      "operationId": "GetExchangeRates",
+      "knn_k5_distance": 0.5077278449693285
+    },
+    {
+      "operationId": "GetExchangeRatesRateId",
+      "knn_k5_distance": 0.5048697638146636
+    },
+    {
+      "operationId": "PostExternalAccountsId",
+      "knn_k5_distance": 0.5098399466336677
+    },
+    {
+      "operationId": "GetFileLinks",
+      "knn_k5_distance": 0.4289081529710355
+    },
+    {
+      "operationId": "PostFileLinks",
+      "knn_k5_distance": 0.43290309940085514
+    },
+    {
+      "operationId": "GetFileLinksLink",
+      "knn_k5_distance": 0.42812466081709155
+    },
+    {
+      "operationId": "PostFileLinksLink",
+      "knn_k5_distance": 0.4454803564064453
+    },
+    {
+      "operationId": "GetFiles",
+      "knn_k5_distance": 0.4558759985901576
+    },
+    {
+      "operationId": "PostFiles",
+      "knn_k5_distance": 0.5083715908619155
+    },
+    {
+      "operationId": "GetFilesFile",
+      "knn_k5_distance": 0.43092534524282994
+    },
+    {
+      "operationId": "GetInvoicePayments",
+      "knn_k5_distance": 0.5213156676178382
+    },
+    {
+      "operationId": "GetInvoicePaymentsInvoicePayment",
+      "knn_k5_distance": 0.35679458070137615
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplates",
+      "knn_k5_distance": 0.43069347538190517
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplatesTemplate",
+      "knn_k5_distance": 0.43964587476523376
+    },
+    {
+      "operationId": "GetInvoiceitems",
+      "knn_k5_distance": 0.3769420597272289
+    },
+    {
+      "operationId": "PostInvoiceitems",
+      "knn_k5_distance": 0.3911653000204881
+    },
+    {
+      "operationId": "DeleteInvoiceitemsInvoiceitem",
+      "knn_k5_distance": 0.4003269953328938
+    },
+    {
+      "operationId": "GetInvoiceitemsInvoiceitem",
+      "knn_k5_distance": 0.303928049942234
+    },
+    {
+      "operationId": "PostInvoiceitemsInvoiceitem",
+      "knn_k5_distance": 0.435694343671694
+    },
+    {
+      "operationId": "GetInvoices",
+      "knn_k5_distance": 0.3869157501643312
+    },
+    {
+      "operationId": "PostInvoices",
+      "knn_k5_distance": 0.43224710586674275
+    },
+    {
+      "operationId": "DeleteInvoicesInvoice",
+      "knn_k5_distance": 0.45350687539950146
+    },
+    {
+      "operationId": "GetInvoicesInvoice",
+      "knn_k5_distance": 0.33932258935450516
+    },
+    {
+      "operationId": "PostInvoicesInvoice",
+      "knn_k5_distance": 0.4795054261037735
+    },
+    {
+      "operationId": "PostLinkAccountSessions",
+      "knn_k5_distance": 0.43186053007133796
+    },
+    {
+      "operationId": "GetLinkAccountSessionsSession",
+      "knn_k5_distance": 0.39153381104390955
+    },
+    {
+      "operationId": "GetLinkedAccounts",
+      "knn_k5_distance": 0.3912792813581114
+    },
+    {
+      "operationId": "GetLinkedAccountsAccount",
+      "knn_k5_distance": 0.29884721712776435
+    },
+    {
+      "operationId": "GetMandatesMandate",
+      "knn_k5_distance": 0.6072501950624909
+    },
+    {
+      "operationId": "GetPaymentIntents",
+      "knn_k5_distance": 0.3842966670067412
+    },
+    {
+      "operationId": "PostPaymentIntents",
+      "knn_k5_distance": 0.31197349591432
+    },
+    {
+      "operationId": "GetPaymentIntentsIntent",
+      "knn_k5_distance": 0.3366581150739286
+    },
+    {
+      "operationId": "PostPaymentIntentsIntent",
+      "knn_k5_distance": 0.3681642292749078
+    },
+    {
+      "operationId": "GetPaymentLinks",
+      "knn_k5_distance": 0.34792605789293324
+    },
+    {
+      "operationId": "PostPaymentLinks",
+      "knn_k5_distance": 0.30071446490259757
+    },
+    {
+      "operationId": "GetPaymentLinksPaymentLink",
+      "knn_k5_distance": 0.3405390014990218
+    },
+    {
+      "operationId": "PostPaymentLinksPaymentLink",
+      "knn_k5_distance": 0.319839610755963
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurations",
+      "knn_k5_distance": 0.32237368537497757
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurations",
+      "knn_k5_distance": 0.27910662616343435
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurationsConfiguration",
+      "knn_k5_distance": 0.31215961734001796
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurationsConfiguration",
+      "knn_k5_distance": 0.2864343393390755
+    },
+    {
+      "operationId": "GetPaymentMethodDomains",
+      "knn_k5_distance": 0.29609774065350597
+    },
+    {
+      "operationId": "PostPaymentMethodDomains",
+      "knn_k5_distance": 0.26498065257650283
+    },
+    {
+      "operationId": "GetPaymentMethodDomainsPaymentMethodDomain",
+      "knn_k5_distance": 0.2976679833221234
+    },
+    {
+      "operationId": "PostPaymentMethodDomainsPaymentMethodDomain",
+      "knn_k5_distance": 0.2652744228075321
+    },
+    {
+      "operationId": "GetPaymentMethods",
+      "knn_k5_distance": 0.4735500674105855
+    },
+    {
+      "operationId": "PostPaymentMethods",
+      "knn_k5_distance": 0.411084438334192
+    },
+    {
+      "operationId": "GetPaymentMethodsPaymentMethod",
+      "knn_k5_distance": 0.4724354349149271
+    },
+    {
+      "operationId": "PostPaymentMethodsPaymentMethod",
+      "knn_k5_distance": 0.3653925584245671
+    },
+    {
+      "operationId": "GetPayouts",
+      "knn_k5_distance": 0.41807249962154114
+    },
+    {
+      "operationId": "PostPayouts",
+      "knn_k5_distance": 0.44557994900864556
+    },
+    {
+      "operationId": "GetPayoutsPayout",
+      "knn_k5_distance": 0.41687090326937365
+    },
+    {
+      "operationId": "PostPayoutsPayout",
+      "knn_k5_distance": 0.4373503532948759
+    },
+    {
+      "operationId": "GetPlans",
+      "knn_k5_distance": 0.421125499642947
+    },
+    {
+      "operationId": "PostPlans",
+      "knn_k5_distance": 0.5005048066095649
+    },
+    {
+      "operationId": "DeletePlansPlan",
+      "knn_k5_distance": 0.510988266872147
+    },
+    {
+      "operationId": "GetPlansPlan",
+      "knn_k5_distance": 0.43837031904734997
+    },
+    {
+      "operationId": "PostPlansPlan",
+      "knn_k5_distance": 0.46597943166222305
+    },
+    {
+      "operationId": "GetPrices",
+      "knn_k5_distance": 0.5148223444907434
+    },
+    {
+      "operationId": "PostPrices",
+      "knn_k5_distance": 0.45799759771619036
+    },
+    {
+      "operationId": "GetPricesPrice",
+      "knn_k5_distance": 0.4143212182098789
+    },
+    {
+      "operationId": "PostPricesPrice",
+      "knn_k5_distance": 0.3997617935673216
+    },
+    {
+      "operationId": "GetProducts",
+      "knn_k5_distance": 0.41718346509368753
+    },
+    {
+      "operationId": "PostProducts",
+      "knn_k5_distance": 0.42167424186969804
+    },
+    {
+      "operationId": "DeleteProductsId",
+      "knn_k5_distance": 0.5012771621838615
+    },
+    {
+      "operationId": "GetProductsId",
+      "knn_k5_distance": 0.41498398758821986
+    },
+    {
+      "operationId": "PostProductsId",
+      "knn_k5_distance": 0.41961721946006925
+    },
+    {
+      "operationId": "GetPromotionCodes",
+      "knn_k5_distance": 0.3835306562214941
+    },
+    {
+      "operationId": "PostPromotionCodes",
+      "knn_k5_distance": 0.46821919553164637
+    },
+    {
+      "operationId": "GetPromotionCodesPromotionCode",
+      "knn_k5_distance": 0.4045033934346883
+    },
+    {
+      "operationId": "PostPromotionCodesPromotionCode",
+      "knn_k5_distance": 0.4211713228496393
+    },
+    {
+      "operationId": "GetQuotes",
+      "knn_k5_distance": 0.4329388773521815
+    },
+    {
+      "operationId": "PostQuotes",
+      "knn_k5_distance": 0.4806243460493082
+    },
+    {
+      "operationId": "GetQuotesQuote",
+      "knn_k5_distance": 0.4249840864187323
+    },
+    {
+      "operationId": "PostQuotesQuote",
+      "knn_k5_distance": 0.4665397937372936
+    },
+    {
+      "operationId": "GetRefunds",
+      "knn_k5_distance": 0.4340395560704458
+    },
+    {
+      "operationId": "PostRefunds",
+      "knn_k5_distance": 0.4387933834597453
+    },
+    {
+      "operationId": "GetRefundsRefund",
+      "knn_k5_distance": 0.4596274189488085
+    },
+    {
+      "operationId": "PostRefundsRefund",
+      "knn_k5_distance": 0.4287342268653365
+    },
+    {
+      "operationId": "GetReviews",
+      "knn_k5_distance": 0.5129723849329176
+    },
+    {
+      "operationId": "GetReviewsReview",
+      "knn_k5_distance": 0.517634806049397
+    },
+    {
+      "operationId": "GetSetupAttempts",
+      "knn_k5_distance": 0.39631000584593057
+    },
+    {
+      "operationId": "GetSetupIntents",
+      "knn_k5_distance": 0.31468673197853175
+    },
+    {
+      "operationId": "PostSetupIntents",
+      "knn_k5_distance": 0.3423698052602095
+    },
+    {
+      "operationId": "GetSetupIntentsIntent",
+      "knn_k5_distance": 0.33955840654633535
+    },
+    {
+      "operationId": "PostSetupIntentsIntent",
+      "knn_k5_distance": 0.3874006598470772
+    },
+    {
+      "operationId": "GetShippingRates",
+      "knn_k5_distance": 0.42137809686458694
+    },
+    {
+      "operationId": "PostShippingRates",
+      "knn_k5_distance": 0.38241738517283735
+    },
+    {
+      "operationId": "GetShippingRatesShippingRateToken",
+      "knn_k5_distance": 0.3949633866463623
+    },
+    {
+      "operationId": "PostShippingRatesShippingRateToken",
+      "knn_k5_distance": 0.3639444378280488
+    },
+    {
+      "operationId": "PostSources",
+      "knn_k5_distance": 0.5104604679345291
+    },
+    {
+      "operationId": "GetSourcesSource",
+      "knn_k5_distance": 0.47293757980950046
+    },
+    {
+      "operationId": "PostSourcesSource",
+      "knn_k5_distance": 0.4510234881155865
+    },
+    {
+      "operationId": "GetSubscriptionItems",
+      "knn_k5_distance": 0.3653942105576508
+    },
+    {
+      "operationId": "PostSubscriptionItems",
+      "knn_k5_distance": 0.36340401424485874
+    },
+    {
+      "operationId": "DeleteSubscriptionItemsItem",
+      "knn_k5_distance": 0.37972859219980387
+    },
+    {
+      "operationId": "GetSubscriptionItemsItem",
+      "knn_k5_distance": 0.3330803107350918
+    },
+    {
+      "operationId": "PostSubscriptionItemsItem",
+      "knn_k5_distance": 0.37065228138853107
+    },
+    {
+      "operationId": "GetSubscriptionSchedules",
+      "knn_k5_distance": 0.3476910043708733
+    },
+    {
+      "operationId": "PostSubscriptionSchedules",
+      "knn_k5_distance": 0.3606932837010839
+    },
+    {
+      "operationId": "GetSubscriptionSchedulesSchedule",
+      "knn_k5_distance": 0.3902163433130869
+    },
+    {
+      "operationId": "PostSubscriptionSchedulesSchedule",
+      "knn_k5_distance": 0.34017100699593233
+    },
+    {
+      "operationId": "GetSubscriptions",
+      "knn_k5_distance": 0.48010519352627606
+    },
+    {
+      "operationId": "PostSubscriptions",
+      "knn_k5_distance": 0.462355863174371
+    },
+    {
+      "operationId": "DeleteSubscriptionsSubscriptionExposedId",
+      "knn_k5_distance": 0.4689528128037785
+    },
+    {
+      "operationId": "GetSubscriptionsSubscriptionExposedId",
+      "knn_k5_distance": 0.45664798524641237
+    },
+    {
+      "operationId": "PostSubscriptionsSubscriptionExposedId",
+      "knn_k5_distance": 0.4404595742473907
+    },
+    {
+      "operationId": "GetTaxCodes",
+      "knn_k5_distance": 0.44041418807215693
+    },
+    {
+      "operationId": "GetTaxCodesId",
+      "knn_k5_distance": 0.38446081923761
+    },
+    {
+      "operationId": "GetTaxIds",
+      "knn_k5_distance": 0.3627862235847494
+    },
+    {
+      "operationId": "PostTaxIds",
+      "knn_k5_distance": 0.35712223020780554
+    },
+    {
+      "operationId": "DeleteTaxIdsId",
+      "knn_k5_distance": 0.372946361408483
+    },
+    {
+      "operationId": "GetTaxIdsId",
+      "knn_k5_distance": 0.301668481052043
+    },
+    {
+      "operationId": "GetTaxRates",
+      "knn_k5_distance": 0.3925675796288969
+    },
+    {
+      "operationId": "PostTaxRates",
+      "knn_k5_distance": 0.3620929836615907
+    },
+    {
+      "operationId": "GetTaxRatesTaxRate",
+      "knn_k5_distance": 0.38182049445763333
+    },
+    {
+      "operationId": "PostTaxRatesTaxRate",
+      "knn_k5_distance": 0.37137280807010054
+    },
+    {
+      "operationId": "PostTokens",
+      "knn_k5_distance": 0.5474713930739339
+    },
+    {
+      "operationId": "GetTokensToken",
+      "knn_k5_distance": 0.4965340084744808
+    },
+    {
+      "operationId": "GetTopups",
+      "knn_k5_distance": 0.43687702878527324
+    },
+    {
+      "operationId": "PostTopups",
+      "knn_k5_distance": 0.4490504912975222
+    },
+    {
+      "operationId": "GetTopupsTopup",
+      "knn_k5_distance": 0.39318606498061665
+    },
+    {
+      "operationId": "PostTopupsTopup",
+      "knn_k5_distance": 0.3880402535173596
+    },
+    {
+      "operationId": "GetTransfers",
+      "knn_k5_distance": 0.4632550309909275
+    },
+    {
+      "operationId": "PostTransfers",
+      "knn_k5_distance": 0.4430567916710816
+    },
+    {
+      "operationId": "GetTransfersTransfer",
+      "knn_k5_distance": 0.41491552604999987
+    },
+    {
+      "operationId": "PostTransfersTransfer",
+      "knn_k5_distance": 0.4154030737513108
+    },
+    {
+      "operationId": "GetWebhookEndpoints",
+      "knn_k5_distance": 0.40813353342593145
+    },
+    {
+      "operationId": "PostWebhookEndpoints",
+      "knn_k5_distance": 0.4778886119723337
+    },
+    {
+      "operationId": "DeleteWebhookEndpointsWebhookEndpoint",
+      "knn_k5_distance": 0.4825865684847532
+    },
+    {
+      "operationId": "GetWebhookEndpointsWebhookEndpoint",
+      "knn_k5_distance": 0.44607222899289434
+    },
+    {
+      "operationId": "PostWebhookEndpointsWebhookEndpoint",
+      "knn_k5_distance": 0.41731202552613106
+    }
+  ],
+  "knn_k10_distances": [
+    {
+      "operationId": "GetAccount",
+      "knn_k10_distance": 0.45168663398365505
+    },
+    {
+      "operationId": "PostAccountLinks",
+      "knn_k10_distance": 0.481844085084266
+    },
+    {
+      "operationId": "PostAccountSessions",
+      "knn_k10_distance": 0.4971616802131025
+    },
+    {
+      "operationId": "GetAccounts",
+      "knn_k10_distance": 0.5086664278623616
+    },
+    {
+      "operationId": "PostAccounts",
+      "knn_k10_distance": 0.5083708138261457
+    },
+    {
+      "operationId": "DeleteAccountsAccount",
+      "knn_k10_distance": 0.5400379503098144
+    },
+    {
+      "operationId": "GetAccountsAccount",
+      "knn_k10_distance": 0.4351798379550118
+    },
+    {
+      "operationId": "PostAccountsAccount",
+      "knn_k10_distance": 0.4822992666681003
+    },
+    {
+      "operationId": "GetApplicationFees",
+      "knn_k10_distance": 0.5095071407141855
+    },
+    {
+      "operationId": "GetApplicationFeesId",
+      "knn_k10_distance": 0.5540250970227526
+    },
+    {
+      "operationId": "GetBalance",
+      "knn_k10_distance": 0.5272471743287357
+    },
+    {
+      "operationId": "GetBalanceSettings",
+      "knn_k10_distance": 0.46730822662900023
+    },
+    {
+      "operationId": "PostBalanceSettings",
+      "knn_k10_distance": 0.49817814761047874
+    },
+    {
+      "operationId": "GetBalanceTransactions",
+      "knn_k10_distance": 0.4924210279004392
+    },
+    {
+      "operationId": "GetBalanceTransactionsId",
+      "knn_k10_distance": 0.5378422441235928
+    },
+    {
+      "operationId": "GetCharges",
+      "knn_k10_distance": 0.43767570990542237
+    },
+    {
+      "operationId": "PostCharges",
+      "knn_k10_distance": 0.46706844077906096
+    },
+    {
+      "operationId": "GetChargesCharge",
+      "knn_k10_distance": 0.45621162471716054
+    },
+    {
+      "operationId": "PostChargesCharge",
+      "knn_k10_distance": 0.48454288274094043
+    },
+    {
+      "operationId": "GetConfirmationTokensConfirmationToken",
+      "knn_k10_distance": 0.6419150857819306
+    },
+    {
+      "operationId": "GetCountrySpecs",
+      "knn_k10_distance": 0.6122606569671005
+    },
+    {
+      "operationId": "GetCountrySpecsCountry",
+      "knn_k10_distance": 0.6760092840932923
+    },
+    {
+      "operationId": "GetCoupons",
+      "knn_k10_distance": 0.46573532330809647
+    },
+    {
+      "operationId": "PostCoupons",
+      "knn_k10_distance": 0.5394810257020038
+    },
+    {
+      "operationId": "DeleteCouponsCoupon",
+      "knn_k10_distance": 0.5235100996710976
+    },
+    {
+      "operationId": "GetCouponsCoupon",
+      "knn_k10_distance": 0.4541260594760046
+    },
+    {
+      "operationId": "PostCouponsCoupon",
+      "knn_k10_distance": 0.49034663800948763
+    },
+    {
+      "operationId": "GetCreditNotes",
+      "knn_k10_distance": 0.5038299842623075
+    },
+    {
+      "operationId": "PostCreditNotes",
+      "knn_k10_distance": 0.5214519812379635
+    },
+    {
+      "operationId": "GetCreditNotesId",
+      "knn_k10_distance": 0.49061563650033635
+    },
+    {
+      "operationId": "PostCreditNotesId",
+      "knn_k10_distance": 0.4863680383018011
+    },
+    {
+      "operationId": "PostCustomerSessions",
+      "knn_k10_distance": 0.5232864151229861
+    },
+    {
+      "operationId": "GetCustomers",
+      "knn_k10_distance": 0.4469317211791677
+    },
+    {
+      "operationId": "PostCustomers",
+      "knn_k10_distance": 0.4624669427468473
+    },
+    {
+      "operationId": "DeleteCustomersCustomer",
+      "knn_k10_distance": 0.5214880608171412
+    },
+    {
+      "operationId": "GetCustomersCustomer",
+      "knn_k10_distance": 0.5030151596931327
+    },
+    {
+      "operationId": "PostCustomersCustomer",
+      "knn_k10_distance": 0.49075991592387486
+    },
+    {
+      "operationId": "GetDisputes",
+      "knn_k10_distance": 0.4941567924848327
+    },
+    {
+      "operationId": "GetDisputesDispute",
+      "knn_k10_distance": 0.4755706860870963
+    },
+    {
+      "operationId": "PostDisputesDispute",
+      "knn_k10_distance": 0.6728239325129385
+    },
+    {
+      "operationId": "PostEphemeralKeys",
+      "knn_k10_distance": 0.6155140853177953
+    },
+    {
+      "operationId": "DeleteEphemeralKeysKey",
+      "knn_k10_distance": 0.6418005675936547
+    },
+    {
+      "operationId": "GetEvents",
+      "knn_k10_distance": 0.5722930573274432
+    },
+    {
+      "operationId": "GetEventsId",
+      "knn_k10_distance": 0.5730464490283182
+    },
+    {
+      "operationId": "GetExchangeRates",
+      "knn_k10_distance": 0.572936581399743
+    },
+    {
+      "operationId": "GetExchangeRatesRateId",
+      "knn_k10_distance": 0.571841001690758
+    },
+    {
+      "operationId": "PostExternalAccountsId",
+      "knn_k10_distance": 0.5512592047867227
+    },
+    {
+      "operationId": "GetFileLinks",
+      "knn_k10_distance": 0.5081083085705504
+    },
+    {
+      "operationId": "PostFileLinks",
+      "knn_k10_distance": 0.49823232578168597
+    },
+    {
+      "operationId": "GetFileLinksLink",
+      "knn_k10_distance": 0.4816959740935344
+    },
+    {
+      "operationId": "PostFileLinksLink",
+      "knn_k10_distance": 0.5197498421858548
+    },
+    {
+      "operationId": "GetFiles",
+      "knn_k10_distance": 0.5133597859494214
+    },
+    {
+      "operationId": "PostFiles",
+      "knn_k10_distance": 0.5793981094054439
+    },
+    {
+      "operationId": "GetFilesFile",
+      "knn_k10_distance": 0.4657996952905628
+    },
+    {
+      "operationId": "GetInvoicePayments",
+      "knn_k10_distance": 0.5509602602519087
+    },
+    {
+      "operationId": "GetInvoicePaymentsInvoicePayment",
+      "knn_k10_distance": 0.4133220613383745
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplates",
+      "knn_k10_distance": 0.5042078480702183
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplatesTemplate",
+      "knn_k10_distance": 0.518053725897561
+    },
+    {
+      "operationId": "GetInvoiceitems",
+      "knn_k10_distance": 0.4140315231636486
+    },
+    {
+      "operationId": "PostInvoiceitems",
+      "knn_k10_distance": 0.4681540459984584
+    },
+    {
+      "operationId": "DeleteInvoiceitemsInvoiceitem",
+      "knn_k10_distance": 0.47118359802382404
+    },
+    {
+      "operationId": "GetInvoiceitemsInvoiceitem",
+      "knn_k10_distance": 0.3789889357420025
+    },
+    {
+      "operationId": "PostInvoiceitemsInvoiceitem",
+      "knn_k10_distance": 0.4916724681814696
+    },
+    {
+      "operationId": "GetInvoices",
+      "knn_k10_distance": 0.44454945328603185
+    },
+    {
+      "operationId": "PostInvoices",
+      "knn_k10_distance": 0.4850073468022412
+    },
+    {
+      "operationId": "DeleteInvoicesInvoice",
+      "knn_k10_distance": 0.5152769322106078
+    },
+    {
+      "operationId": "GetInvoicesInvoice",
+      "knn_k10_distance": 0.4002448796769924
+    },
+    {
+      "operationId": "PostInvoicesInvoice",
+      "knn_k10_distance": 0.5252875015053519
+    },
+    {
+      "operationId": "PostLinkAccountSessions",
+      "knn_k10_distance": 0.5021951865325671
+    },
+    {
+      "operationId": "GetLinkAccountSessionsSession",
+      "knn_k10_distance": 0.4776410105537735
+    },
+    {
+      "operationId": "GetLinkedAccounts",
+      "knn_k10_distance": 0.4629389255739339
+    },
+    {
+      "operationId": "GetLinkedAccountsAccount",
+      "knn_k10_distance": 0.4137862259801728
+    },
+    {
+      "operationId": "GetMandatesMandate",
+      "knn_k10_distance": 0.6278104817898646
+    },
+    {
+      "operationId": "GetPaymentIntents",
+      "knn_k10_distance": 0.43532494560463436
+    },
+    {
+      "operationId": "PostPaymentIntents",
+      "knn_k10_distance": 0.40445098239174976
+    },
+    {
+      "operationId": "GetPaymentIntentsIntent",
+      "knn_k10_distance": 0.4199349837232525
+    },
+    {
+      "operationId": "PostPaymentIntentsIntent",
+      "knn_k10_distance": 0.42873536838572973
+    },
+    {
+      "operationId": "GetPaymentLinks",
+      "knn_k10_distance": 0.40456059251807924
+    },
+    {
+      "operationId": "PostPaymentLinks",
+      "knn_k10_distance": 0.3885857416963884
+    },
+    {
+      "operationId": "GetPaymentLinksPaymentLink",
+      "knn_k10_distance": 0.4108534071883498
+    },
+    {
+      "operationId": "PostPaymentLinksPaymentLink",
+      "knn_k10_distance": 0.3727982578892484
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurations",
+      "knn_k10_distance": 0.405650582210692
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurations",
+      "knn_k10_distance": 0.3561461024136169
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurationsConfiguration",
+      "knn_k10_distance": 0.41150114821956024
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurationsConfiguration",
+      "knn_k10_distance": 0.3804527343993166
+    },
+    {
+      "operationId": "GetPaymentMethodDomains",
+      "knn_k10_distance": 0.3911358052081935
+    },
+    {
+      "operationId": "PostPaymentMethodDomains",
+      "knn_k10_distance": 0.3560163059698438
+    },
+    {
+      "operationId": "GetPaymentMethodDomainsPaymentMethodDomain",
+      "knn_k10_distance": 0.4006834382363132
+    },
+    {
+      "operationId": "PostPaymentMethodDomainsPaymentMethodDomain",
+      "knn_k10_distance": 0.35392678406834077
+    },
+    {
+      "operationId": "GetPaymentMethods",
+      "knn_k10_distance": 0.5191898259602798
+    },
+    {
+      "operationId": "PostPaymentMethods",
+      "knn_k10_distance": 0.43780392658223805
+    },
+    {
+      "operationId": "GetPaymentMethodsPaymentMethod",
+      "knn_k10_distance": 0.5025225804365672
+    },
+    {
+      "operationId": "PostPaymentMethodsPaymentMethod",
+      "knn_k10_distance": 0.41687553626852497
+    },
+    {
+      "operationId": "GetPayouts",
+      "knn_k10_distance": 0.47862558385887244
+    },
+    {
+      "operationId": "PostPayouts",
+      "knn_k10_distance": 0.5115439387122862
+    },
+    {
+      "operationId": "GetPayoutsPayout",
+      "knn_k10_distance": 0.4568905021523915
+    },
+    {
+      "operationId": "PostPayoutsPayout",
+      "knn_k10_distance": 0.47507483362352537
+    },
+    {
+      "operationId": "GetPlans",
+      "knn_k10_distance": 0.4520373118737363
+    },
+    {
+      "operationId": "PostPlans",
+      "knn_k10_distance": 0.5422179982337145
+    },
+    {
+      "operationId": "DeletePlansPlan",
+      "knn_k10_distance": 0.5453879855992112
+    },
+    {
+      "operationId": "GetPlansPlan",
+      "knn_k10_distance": 0.4683014693059471
+    },
+    {
+      "operationId": "PostPlansPlan",
+      "knn_k10_distance": 0.4844428625542167
+    },
+    {
+      "operationId": "GetPrices",
+      "knn_k10_distance": 0.5412956169021303
+    },
+    {
+      "operationId": "PostPrices",
+      "knn_k10_distance": 0.4969029563570995
+    },
+    {
+      "operationId": "GetPricesPrice",
+      "knn_k10_distance": 0.43341280212986355
+    },
+    {
+      "operationId": "PostPricesPrice",
+      "knn_k10_distance": 0.4410575145651062
+    },
+    {
+      "operationId": "GetProducts",
+      "knn_k10_distance": 0.4573766659911064
+    },
+    {
+      "operationId": "PostProducts",
+      "knn_k10_distance": 0.47154547376018136
+    },
+    {
+      "operationId": "DeleteProductsId",
+      "knn_k10_distance": 0.5393288986614866
+    },
+    {
+      "operationId": "GetProductsId",
+      "knn_k10_distance": 0.4347619983211534
+    },
+    {
+      "operationId": "PostProductsId",
+      "knn_k10_distance": 0.45544409362793586
+    },
+    {
+      "operationId": "GetPromotionCodes",
+      "knn_k10_distance": 0.4383437197659907
+    },
+    {
+      "operationId": "PostPromotionCodes",
+      "knn_k10_distance": 0.5626112940536869
+    },
+    {
+      "operationId": "GetPromotionCodesPromotionCode",
+      "knn_k10_distance": 0.4867215300026174
+    },
+    {
+      "operationId": "PostPromotionCodesPromotionCode",
+      "knn_k10_distance": 0.460436389890816
+    },
+    {
+      "operationId": "GetQuotes",
+      "knn_k10_distance": 0.4719405647871947
+    },
+    {
+      "operationId": "PostQuotes",
+      "knn_k10_distance": 0.5710049417093783
+    },
+    {
+      "operationId": "GetQuotesQuote",
+      "knn_k10_distance": 0.4567624910145266
+    },
+    {
+      "operationId": "PostQuotesQuote",
+      "knn_k10_distance": 0.5532547344593925
+    },
+    {
+      "operationId": "GetRefunds",
+      "knn_k10_distance": 0.4825696334651594
+    },
+    {
+      "operationId": "PostRefunds",
+      "knn_k10_distance": 0.47236624883212064
+    },
+    {
+      "operationId": "GetRefundsRefund",
+      "knn_k10_distance": 0.49709237538367573
+    },
+    {
+      "operationId": "PostRefundsRefund",
+      "knn_k10_distance": 0.46422123390165576
+    },
+    {
+      "operationId": "GetReviews",
+      "knn_k10_distance": 0.5614240086307399
+    },
+    {
+      "operationId": "GetReviewsReview",
+      "knn_k10_distance": 0.5630193828965824
+    },
+    {
+      "operationId": "GetSetupAttempts",
+      "knn_k10_distance": 0.5144539486128138
+    },
+    {
+      "operationId": "GetSetupIntents",
+      "knn_k10_distance": 0.45947015826554355
+    },
+    {
+      "operationId": "PostSetupIntents",
+      "knn_k10_distance": 0.39958116596202503
+    },
+    {
+      "operationId": "GetSetupIntentsIntent",
+      "knn_k10_distance": 0.47131445164400515
+    },
+    {
+      "operationId": "PostSetupIntentsIntent",
+      "knn_k10_distance": 0.4915698221793737
+    },
+    {
+      "operationId": "GetShippingRates",
+      "knn_k10_distance": 0.46478430085775513
+    },
+    {
+      "operationId": "PostShippingRates",
+      "knn_k10_distance": 0.4404092828106654
+    },
+    {
+      "operationId": "GetShippingRatesShippingRateToken",
+      "knn_k10_distance": 0.4746131912370487
+    },
+    {
+      "operationId": "PostShippingRatesShippingRateToken",
+      "knn_k10_distance": 0.43868573725574744
+    },
+    {
+      "operationId": "PostSources",
+      "knn_k10_distance": 0.5735737016900111
+    },
+    {
+      "operationId": "GetSourcesSource",
+      "knn_k10_distance": 0.511939146830427
+    },
+    {
+      "operationId": "PostSourcesSource",
+      "knn_k10_distance": 0.48538125245768154
+    },
+    {
+      "operationId": "GetSubscriptionItems",
+      "knn_k10_distance": 0.42048687673976637
+    },
+    {
+      "operationId": "PostSubscriptionItems",
+      "knn_k10_distance": 0.4468364584847603
+    },
+    {
+      "operationId": "DeleteSubscriptionItemsItem",
+      "knn_k10_distance": 0.45883065265741096
+    },
+    {
+      "operationId": "GetSubscriptionItemsItem",
+      "knn_k10_distance": 0.3925108014278541
+    },
+    {
+      "operationId": "PostSubscriptionItemsItem",
+      "knn_k10_distance": 0.43407295842191995
+    },
+    {
+      "operationId": "GetSubscriptionSchedules",
+      "knn_k10_distance": 0.42082305049421465
+    },
+    {
+      "operationId": "PostSubscriptionSchedules",
+      "knn_k10_distance": 0.45515511907750794
+    },
+    {
+      "operationId": "GetSubscriptionSchedulesSchedule",
+      "knn_k10_distance": 0.47648318229453973
+    },
+    {
+      "operationId": "PostSubscriptionSchedulesSchedule",
+      "knn_k10_distance": 0.421841188073802
+    },
+    {
+      "operationId": "GetSubscriptions",
+      "knn_k10_distance": 0.5202489565043705
+    },
+    {
+      "operationId": "PostSubscriptions",
+      "knn_k10_distance": 0.5112236068707998
+    },
+    {
+      "operationId": "DeleteSubscriptionsSubscriptionExposedId",
+      "knn_k10_distance": 0.5141614417822696
+    },
+    {
+      "operationId": "GetSubscriptionsSubscriptionExposedId",
+      "knn_k10_distance": 0.4947642237257922
+    },
+    {
+      "operationId": "PostSubscriptionsSubscriptionExposedId",
+      "knn_k10_distance": 0.4859135497155364
+    },
+    {
+      "operationId": "GetTaxCodes",
+      "knn_k10_distance": 0.5050239811926166
+    },
+    {
+      "operationId": "GetTaxCodesId",
+      "knn_k10_distance": 0.42017443455999864
+    },
+    {
+      "operationId": "GetTaxIds",
+      "knn_k10_distance": 0.44027352481510745
+    },
+    {
+      "operationId": "PostTaxIds",
+      "knn_k10_distance": 0.44346631017698873
+    },
+    {
+      "operationId": "DeleteTaxIdsId",
+      "knn_k10_distance": 0.45872634593536166
+    },
+    {
+      "operationId": "GetTaxIdsId",
+      "knn_k10_distance": 0.4109385676756087
+    },
+    {
+      "operationId": "GetTaxRates",
+      "knn_k10_distance": 0.42200275248408625
+    },
+    {
+      "operationId": "PostTaxRates",
+      "knn_k10_distance": 0.4473384404653862
+    },
+    {
+      "operationId": "GetTaxRatesTaxRate",
+      "knn_k10_distance": 0.4051782168795043
+    },
+    {
+      "operationId": "PostTaxRatesTaxRate",
+      "knn_k10_distance": 0.4295203283420623
+    },
+    {
+      "operationId": "PostTokens",
+      "knn_k10_distance": 0.5705194455980012
+    },
+    {
+      "operationId": "GetTokensToken",
+      "knn_k10_distance": 0.5072897855574652
+    },
+    {
+      "operationId": "GetTopups",
+      "knn_k10_distance": 0.4944244848349945
+    },
+    {
+      "operationId": "PostTopups",
+      "knn_k10_distance": 0.5114205031469188
+    },
+    {
+      "operationId": "GetTopupsTopup",
+      "knn_k10_distance": 0.43518871742419496
+    },
+    {
+      "operationId": "PostTopupsTopup",
+      "knn_k10_distance": 0.4428658031287235
+    },
+    {
+      "operationId": "GetTransfers",
+      "knn_k10_distance": 0.49596033588926386
+    },
+    {
+      "operationId": "PostTransfers",
+      "knn_k10_distance": 0.5028572932298031
+    },
+    {
+      "operationId": "GetTransfersTransfer",
+      "knn_k10_distance": 0.4446725491756089
+    },
+    {
+      "operationId": "PostTransfersTransfer",
+      "knn_k10_distance": 0.4551305084089773
+    },
+    {
+      "operationId": "GetWebhookEndpoints",
+      "knn_k10_distance": 0.4609870074999825
+    },
+    {
+      "operationId": "PostWebhookEndpoints",
+      "knn_k10_distance": 0.5552437491833155
+    },
+    {
+      "operationId": "DeleteWebhookEndpointsWebhookEndpoint",
+      "knn_k10_distance": 0.5485726888656606
+    },
+    {
+      "operationId": "GetWebhookEndpointsWebhookEndpoint",
+      "knn_k10_distance": 0.49158635274440304
+    },
+    {
+      "operationId": "PostWebhookEndpointsWebhookEndpoint",
+      "knn_k10_distance": 0.5042481321086731
+    }
+  ],
+  "knn_k20_distances": [
+    {
+      "operationId": "GetAccount",
+      "knn_k20_distance": 0.5209488799189583
+    },
+    {
+      "operationId": "PostAccountLinks",
+      "knn_k20_distance": 0.5372434573379765
+    },
+    {
+      "operationId": "PostAccountSessions",
+      "knn_k20_distance": 0.5707216101180451
+    },
+    {
+      "operationId": "GetAccounts",
+      "knn_k20_distance": 0.5602301330472443
+    },
+    {
+      "operationId": "PostAccounts",
+      "knn_k20_distance": 0.5703289406861638
+    },
+    {
+      "operationId": "DeleteAccountsAccount",
+      "knn_k20_distance": 0.5918838865890473
+    },
+    {
+      "operationId": "GetAccountsAccount",
+      "knn_k20_distance": 0.5068345139543112
+    },
+    {
+      "operationId": "PostAccountsAccount",
+      "knn_k20_distance": 0.5207431328075233
+    },
+    {
+      "operationId": "GetApplicationFees",
+      "knn_k20_distance": 0.5650885794947913
+    },
+    {
+      "operationId": "GetApplicationFeesId",
+      "knn_k20_distance": 0.6008709602718214
+    },
+    {
+      "operationId": "GetBalance",
+      "knn_k20_distance": 0.5972481682466941
+    },
+    {
+      "operationId": "GetBalanceSettings",
+      "knn_k20_distance": 0.5410483838673734
+    },
+    {
+      "operationId": "PostBalanceSettings",
+      "knn_k20_distance": 0.561234950946125
+    },
+    {
+      "operationId": "GetBalanceTransactions",
+      "knn_k20_distance": 0.5502121495945411
+    },
+    {
+      "operationId": "GetBalanceTransactionsId",
+      "knn_k20_distance": 0.577414099947247
+    },
+    {
+      "operationId": "GetCharges",
+      "knn_k20_distance": 0.50141821937617
+    },
+    {
+      "operationId": "PostCharges",
+      "knn_k20_distance": 0.5314631252656606
+    },
+    {
+      "operationId": "GetChargesCharge",
+      "knn_k20_distance": 0.5212413672489296
+    },
+    {
+      "operationId": "PostChargesCharge",
+      "knn_k20_distance": 0.5219457538242006
+    },
+    {
+      "operationId": "GetConfirmationTokensConfirmationToken",
+      "knn_k20_distance": 0.675455389591038
+    },
+    {
+      "operationId": "GetCountrySpecs",
+      "knn_k20_distance": 0.6542234106723118
+    },
+    {
+      "operationId": "GetCountrySpecsCountry",
+      "knn_k20_distance": 0.7227682705130276
+    },
+    {
+      "operationId": "GetCoupons",
+      "knn_k20_distance": 0.5112289656513712
+    },
+    {
+      "operationId": "PostCoupons",
+      "knn_k20_distance": 0.583816871036135
+    },
+    {
+      "operationId": "DeleteCouponsCoupon",
+      "knn_k20_distance": 0.592784214747569
+    },
+    {
+      "operationId": "GetCouponsCoupon",
+      "knn_k20_distance": 0.495848871347922
+    },
+    {
+      "operationId": "PostCouponsCoupon",
+      "knn_k20_distance": 0.5317491474988751
+    },
+    {
+      "operationId": "GetCreditNotes",
+      "knn_k20_distance": 0.542625496423448
+    },
+    {
+      "operationId": "PostCreditNotes",
+      "knn_k20_distance": 0.5811328118167773
+    },
+    {
+      "operationId": "GetCreditNotesId",
+      "knn_k20_distance": 0.5428292585042374
+    },
+    {
+      "operationId": "PostCreditNotesId",
+      "knn_k20_distance": 0.5293938379023951
+    },
+    {
+      "operationId": "PostCustomerSessions",
+      "knn_k20_distance": 0.5737103256050099
+    },
+    {
+      "operationId": "GetCustomers",
+      "knn_k20_distance": 0.5038151033821139
+    },
+    {
+      "operationId": "PostCustomers",
+      "knn_k20_distance": 0.5227259271014861
+    },
+    {
+      "operationId": "DeleteCustomersCustomer",
+      "knn_k20_distance": 0.5755104893811055
+    },
+    {
+      "operationId": "GetCustomersCustomer",
+      "knn_k20_distance": 0.557429736627918
+    },
+    {
+      "operationId": "PostCustomersCustomer",
+      "knn_k20_distance": 0.5270007882329799
+    },
+    {
+      "operationId": "GetDisputes",
+      "knn_k20_distance": 0.5396959074327423
+    },
+    {
+      "operationId": "GetDisputesDispute",
+      "knn_k20_distance": 0.5291494046425878
+    },
+    {
+      "operationId": "PostDisputesDispute",
+      "knn_k20_distance": 0.7112399499269052
+    },
+    {
+      "operationId": "PostEphemeralKeys",
+      "knn_k20_distance": 0.6644539505897353
+    },
+    {
+      "operationId": "DeleteEphemeralKeysKey",
+      "knn_k20_distance": 0.6942372204688815
+    },
+    {
+      "operationId": "GetEvents",
+      "knn_k20_distance": 0.6169904551038456
+    },
+    {
+      "operationId": "GetEventsId",
+      "knn_k20_distance": 0.6124305647221832
+    },
+    {
+      "operationId": "GetExchangeRates",
+      "knn_k20_distance": 0.6230518963532028
+    },
+    {
+      "operationId": "GetExchangeRatesRateId",
+      "knn_k20_distance": 0.6264815353218274
+    },
+    {
+      "operationId": "PostExternalAccountsId",
+      "knn_k20_distance": 0.585612326525103
+    },
+    {
+      "operationId": "GetFileLinks",
+      "knn_k20_distance": 0.5813251716407507
+    },
+    {
+      "operationId": "PostFileLinks",
+      "knn_k20_distance": 0.5813846655108875
+    },
+    {
+      "operationId": "GetFileLinksLink",
+      "knn_k20_distance": 0.5247827174357855
+    },
+    {
+      "operationId": "PostFileLinksLink",
+      "knn_k20_distance": 0.5769346690493325
+    },
+    {
+      "operationId": "GetFiles",
+      "knn_k20_distance": 0.5597585464211698
+    },
+    {
+      "operationId": "PostFiles",
+      "knn_k20_distance": 0.6310922788271804
+    },
+    {
+      "operationId": "GetFilesFile",
+      "knn_k20_distance": 0.546538442630646
+    },
+    {
+      "operationId": "GetInvoicePayments",
+      "knn_k20_distance": 0.5884904143759757
+    },
+    {
+      "operationId": "GetInvoicePaymentsInvoicePayment",
+      "knn_k20_distance": 0.47278159570487627
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplates",
+      "knn_k20_distance": 0.5644333203634824
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplatesTemplate",
+      "knn_k20_distance": 0.5792908092242441
+    },
+    {
+      "operationId": "GetInvoiceitems",
+      "knn_k20_distance": 0.4776131923611972
+    },
+    {
+      "operationId": "PostInvoiceitems",
+      "knn_k20_distance": 0.5391382645710956
+    },
+    {
+      "operationId": "DeleteInvoiceitemsInvoiceitem",
+      "knn_k20_distance": 0.5586069532151405
+    },
+    {
+      "operationId": "GetInvoiceitemsInvoiceitem",
+      "knn_k20_distance": 0.4523345563920348
+    },
+    {
+      "operationId": "PostInvoiceitemsInvoiceitem",
+      "knn_k20_distance": 0.5509705440846513
+    },
+    {
+      "operationId": "GetInvoices",
+      "knn_k20_distance": 0.5105983706887414
+    },
+    {
+      "operationId": "PostInvoices",
+      "knn_k20_distance": 0.538480117539185
+    },
+    {
+      "operationId": "DeleteInvoicesInvoice",
+      "knn_k20_distance": 0.5717232015902699
+    },
+    {
+      "operationId": "GetInvoicesInvoice",
+      "knn_k20_distance": 0.4663276796267638
+    },
+    {
+      "operationId": "PostInvoicesInvoice",
+      "knn_k20_distance": 0.576350047655158
+    },
+    {
+      "operationId": "PostLinkAccountSessions",
+      "knn_k20_distance": 0.5691671313269473
+    },
+    {
+      "operationId": "GetLinkAccountSessionsSession",
+      "knn_k20_distance": 0.5593564998375646
+    },
+    {
+      "operationId": "GetLinkedAccounts",
+      "knn_k20_distance": 0.530233972834935
+    },
+    {
+      "operationId": "GetLinkedAccountsAccount",
+      "knn_k20_distance": 0.501838386999202
+    },
+    {
+      "operationId": "GetMandatesMandate",
+      "knn_k20_distance": 0.6479100406002922
+    },
+    {
+      "operationId": "GetPaymentIntents",
+      "knn_k20_distance": 0.49556987699708765
+    },
+    {
+      "operationId": "PostPaymentIntents",
+      "knn_k20_distance": 0.5038531173790823
+    },
+    {
+      "operationId": "GetPaymentIntentsIntent",
+      "knn_k20_distance": 0.49968511907004654
+    },
+    {
+      "operationId": "PostPaymentIntentsIntent",
+      "knn_k20_distance": 0.5035989216913311
+    },
+    {
+      "operationId": "GetPaymentLinks",
+      "knn_k20_distance": 0.45790455179985656
+    },
+    {
+      "operationId": "PostPaymentLinks",
+      "knn_k20_distance": 0.46077737399166907
+    },
+    {
+      "operationId": "GetPaymentLinksPaymentLink",
+      "knn_k20_distance": 0.4774781269045034
+    },
+    {
+      "operationId": "PostPaymentLinksPaymentLink",
+      "knn_k20_distance": 0.4365376499895712
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurations",
+      "knn_k20_distance": 0.4964385024585439
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurations",
+      "knn_k20_distance": 0.45082893072480373
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurationsConfiguration",
+      "knn_k20_distance": 0.5115903114512761
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurationsConfiguration",
+      "knn_k20_distance": 0.47127066643130633
+    },
+    {
+      "operationId": "GetPaymentMethodDomains",
+      "knn_k20_distance": 0.4821094670896356
+    },
+    {
+      "operationId": "PostPaymentMethodDomains",
+      "knn_k20_distance": 0.45795746814216454
+    },
+    {
+      "operationId": "GetPaymentMethodDomainsPaymentMethodDomain",
+      "knn_k20_distance": 0.4793757353180295
+    },
+    {
+      "operationId": "PostPaymentMethodDomainsPaymentMethodDomain",
+      "knn_k20_distance": 0.44581728047985536
+    },
+    {
+      "operationId": "GetPaymentMethods",
+      "knn_k20_distance": 0.5722504853595402
+    },
+    {
+      "operationId": "PostPaymentMethods",
+      "knn_k20_distance": 0.4976189498347276
+    },
+    {
+      "operationId": "GetPaymentMethodsPaymentMethod",
+      "knn_k20_distance": 0.5497895784435902
+    },
+    {
+      "operationId": "PostPaymentMethodsPaymentMethod",
+      "knn_k20_distance": 0.47703931344510453
+    },
+    {
+      "operationId": "GetPayouts",
+      "knn_k20_distance": 0.5318116378264478
+    },
+    {
+      "operationId": "PostPayouts",
+      "knn_k20_distance": 0.5686775420094643
+    },
+    {
+      "operationId": "GetPayoutsPayout",
+      "knn_k20_distance": 0.5212095398553872
+    },
+    {
+      "operationId": "PostPayoutsPayout",
+      "knn_k20_distance": 0.5205003148628977
+    },
+    {
+      "operationId": "GetPlans",
+      "knn_k20_distance": 0.49311698650273617
+    },
+    {
+      "operationId": "PostPlans",
+      "knn_k20_distance": 0.5850665062361871
+    },
+    {
+      "operationId": "DeletePlansPlan",
+      "knn_k20_distance": 0.5992308246500828
+    },
+    {
+      "operationId": "GetPlansPlan",
+      "knn_k20_distance": 0.5132934827975959
+    },
+    {
+      "operationId": "PostPlansPlan",
+      "knn_k20_distance": 0.5138645534939569
+    },
+    {
+      "operationId": "GetPrices",
+      "knn_k20_distance": 0.5781574199407163
+    },
+    {
+      "operationId": "PostPrices",
+      "knn_k20_distance": 0.5406735353784172
+    },
+    {
+      "operationId": "GetPricesPrice",
+      "knn_k20_distance": 0.4769551880709354
+    },
+    {
+      "operationId": "PostPricesPrice",
+      "knn_k20_distance": 0.4871316556858726
+    },
+    {
+      "operationId": "GetProducts",
+      "knn_k20_distance": 0.5023188065800082
+    },
+    {
+      "operationId": "PostProducts",
+      "knn_k20_distance": 0.5356426272244762
+    },
+    {
+      "operationId": "DeleteProductsId",
+      "knn_k20_distance": 0.5926909791700861
+    },
+    {
+      "operationId": "GetProductsId",
+      "knn_k20_distance": 0.4946617787058785
+    },
+    {
+      "operationId": "PostProductsId",
+      "knn_k20_distance": 0.5012386205604586
+    },
+    {
+      "operationId": "GetPromotionCodes",
+      "knn_k20_distance": 0.4970527724414815
+    },
+    {
+      "operationId": "PostPromotionCodes",
+      "knn_k20_distance": 0.6280502337687064
+    },
+    {
+      "operationId": "GetPromotionCodesPromotionCode",
+      "knn_k20_distance": 0.5459383655994448
+    },
+    {
+      "operationId": "PostPromotionCodesPromotionCode",
+      "knn_k20_distance": 0.5045399563399463
+    },
+    {
+      "operationId": "GetQuotes",
+      "knn_k20_distance": 0.5203622296068499
+    },
+    {
+      "operationId": "PostQuotes",
+      "knn_k20_distance": 0.635094871449931
+    },
+    {
+      "operationId": "GetQuotesQuote",
+      "knn_k20_distance": 0.5026065073295595
+    },
+    {
+      "operationId": "PostQuotesQuote",
+      "knn_k20_distance": 0.6240131986457087
+    },
+    {
+      "operationId": "GetRefunds",
+      "knn_k20_distance": 0.5251894479235902
+    },
+    {
+      "operationId": "PostRefunds",
+      "knn_k20_distance": 0.5365795520934887
+    },
+    {
+      "operationId": "GetRefundsRefund",
+      "knn_k20_distance": 0.5361376270049917
+    },
+    {
+      "operationId": "PostRefundsRefund",
+      "knn_k20_distance": 0.5143953380894785
+    },
+    {
+      "operationId": "GetReviews",
+      "knn_k20_distance": 0.6087451603431278
+    },
+    {
+      "operationId": "GetReviewsReview",
+      "knn_k20_distance": 0.6064232156907202
+    },
+    {
+      "operationId": "GetSetupAttempts",
+      "knn_k20_distance": 0.5988062366061622
+    },
+    {
+      "operationId": "GetSetupIntents",
+      "knn_k20_distance": 0.5659401827006059
+    },
+    {
+      "operationId": "PostSetupIntents",
+      "knn_k20_distance": 0.5080731791516249
+    },
+    {
+      "operationId": "GetSetupIntentsIntent",
+      "knn_k20_distance": 0.5855537390322014
+    },
+    {
+      "operationId": "PostSetupIntentsIntent",
+      "knn_k20_distance": 0.5664349265999544
+    },
+    {
+      "operationId": "GetShippingRates",
+      "knn_k20_distance": 0.5077868767033552
+    },
+    {
+      "operationId": "PostShippingRates",
+      "knn_k20_distance": 0.5161457885123503
+    },
+    {
+      "operationId": "GetShippingRatesShippingRateToken",
+      "knn_k20_distance": 0.5369781663815492
+    },
+    {
+      "operationId": "PostShippingRatesShippingRateToken",
+      "knn_k20_distance": 0.5063523847881869
+    },
+    {
+      "operationId": "PostSources",
+      "knn_k20_distance": 0.6523024229123221
+    },
+    {
+      "operationId": "GetSourcesSource",
+      "knn_k20_distance": 0.5872254609397063
+    },
+    {
+      "operationId": "PostSourcesSource",
+      "knn_k20_distance": 0.5255688846791269
+    },
+    {
+      "operationId": "GetSubscriptionItems",
+      "knn_k20_distance": 0.48476418179378333
+    },
+    {
+      "operationId": "PostSubscriptionItems",
+      "knn_k20_distance": 0.5240971385735861
+    },
+    {
+      "operationId": "DeleteSubscriptionItemsItem",
+      "knn_k20_distance": 0.5325191304520105
+    },
+    {
+      "operationId": "GetSubscriptionItemsItem",
+      "knn_k20_distance": 0.45641634859301866
+    },
+    {
+      "operationId": "PostSubscriptionItemsItem",
+      "knn_k20_distance": 0.5084205318419868
+    },
+    {
+      "operationId": "GetSubscriptionSchedules",
+      "knn_k20_distance": 0.49520483562140916
+    },
+    {
+      "operationId": "PostSubscriptionSchedules",
+      "knn_k20_distance": 0.5293495524698819
+    },
+    {
+      "operationId": "GetSubscriptionSchedulesSchedule",
+      "knn_k20_distance": 0.5382893153459614
+    },
+    {
+      "operationId": "PostSubscriptionSchedulesSchedule",
+      "knn_k20_distance": 0.4890888531708251
+    },
+    {
+      "operationId": "GetSubscriptions",
+      "knn_k20_distance": 0.557140923104859
+    },
+    {
+      "operationId": "PostSubscriptions",
+      "knn_k20_distance": 0.5545508175158264
+    },
+    {
+      "operationId": "DeleteSubscriptionsSubscriptionExposedId",
+      "knn_k20_distance": 0.5686500532229508
+    },
+    {
+      "operationId": "GetSubscriptionsSubscriptionExposedId",
+      "knn_k20_distance": 0.533797185728778
+    },
+    {
+      "operationId": "PostSubscriptionsSubscriptionExposedId",
+      "knn_k20_distance": 0.5395308319249011
+    },
+    {
+      "operationId": "GetTaxCodes",
+      "knn_k20_distance": 0.5627456593902098
+    },
+    {
+      "operationId": "GetTaxCodesId",
+      "knn_k20_distance": 0.48471033253267926
+    },
+    {
+      "operationId": "GetTaxIds",
+      "knn_k20_distance": 0.5115959440137282
+    },
+    {
+      "operationId": "PostTaxIds",
+      "knn_k20_distance": 0.511651700517459
+    },
+    {
+      "operationId": "DeleteTaxIdsId",
+      "knn_k20_distance": 0.5413656558269953
+    },
+    {
+      "operationId": "GetTaxIdsId",
+      "knn_k20_distance": 0.49302129115047694
+    },
+    {
+      "operationId": "GetTaxRates",
+      "knn_k20_distance": 0.47377428770570207
+    },
+    {
+      "operationId": "PostTaxRates",
+      "knn_k20_distance": 0.5261207660882398
+    },
+    {
+      "operationId": "GetTaxRatesTaxRate",
+      "knn_k20_distance": 0.45352227875953527
+    },
+    {
+      "operationId": "PostTaxRatesTaxRate",
+      "knn_k20_distance": 0.48328784977434536
+    },
+    {
+      "operationId": "PostTokens",
+      "knn_k20_distance": 0.6118033655464441
+    },
+    {
+      "operationId": "GetTokensToken",
+      "knn_k20_distance": 0.5383556194698869
+    },
+    {
+      "operationId": "GetTopups",
+      "knn_k20_distance": 0.5340453888640015
+    },
+    {
+      "operationId": "PostTopups",
+      "knn_k20_distance": 0.5627885859463515
+    },
+    {
+      "operationId": "GetTopupsTopup",
+      "knn_k20_distance": 0.5223376531306105
+    },
+    {
+      "operationId": "PostTopupsTopup",
+      "knn_k20_distance": 0.49217708828950874
+    },
+    {
+      "operationId": "GetTransfers",
+      "knn_k20_distance": 0.5339488347087181
+    },
+    {
+      "operationId": "PostTransfers",
+      "knn_k20_distance": 0.5502788198734295
+    },
+    {
+      "operationId": "GetTransfersTransfer",
+      "knn_k20_distance": 0.520709595597823
+    },
+    {
+      "operationId": "PostTransfersTransfer",
+      "knn_k20_distance": 0.5159663141155433
+    },
+    {
+      "operationId": "GetWebhookEndpoints",
+      "knn_k20_distance": 0.5123096763309698
+    },
+    {
+      "operationId": "PostWebhookEndpoints",
+      "knn_k20_distance": 0.6196327325814349
+    },
+    {
+      "operationId": "DeleteWebhookEndpointsWebhookEndpoint",
+      "knn_k20_distance": 0.6099420724648639
+    },
+    {
+      "operationId": "GetWebhookEndpointsWebhookEndpoint",
+      "knn_k20_distance": 0.5368008759914554
+    },
+    {
+      "operationId": "PostWebhookEndpointsWebhookEndpoint",
+      "knn_k20_distance": 0.5690038394100725
+    }
+  ],
+  "knn_k50_distances": [
+    {
+      "operationId": "GetAccount",
+      "knn_k50_distance": 0.5956986252958857
+    },
+    {
+      "operationId": "PostAccountLinks",
+      "knn_k50_distance": 0.6220642758869036
+    },
+    {
+      "operationId": "PostAccountSessions",
+      "knn_k50_distance": 0.6605524812873003
+    },
+    {
+      "operationId": "GetAccounts",
+      "knn_k50_distance": 0.6349601284260723
+    },
+    {
+      "operationId": "PostAccounts",
+      "knn_k50_distance": 0.6530219334299332
+    },
+    {
+      "operationId": "DeleteAccountsAccount",
+      "knn_k50_distance": 0.6658060904192046
+    },
+    {
+      "operationId": "GetAccountsAccount",
+      "knn_k50_distance": 0.5870408245119308
+    },
+    {
+      "operationId": "PostAccountsAccount",
+      "knn_k50_distance": 0.5891558572996387
+    },
+    {
+      "operationId": "GetApplicationFees",
+      "knn_k50_distance": 0.6427453499752711
+    },
+    {
+      "operationId": "GetApplicationFeesId",
+      "knn_k50_distance": 0.6508303964235137
+    },
+    {
+      "operationId": "GetBalance",
+      "knn_k50_distance": 0.6684005539244069
+    },
+    {
+      "operationId": "GetBalanceSettings",
+      "knn_k50_distance": 0.6355237447732105
+    },
+    {
+      "operationId": "PostBalanceSettings",
+      "knn_k50_distance": 0.6208935339848437
+    },
+    {
+      "operationId": "GetBalanceTransactions",
+      "knn_k50_distance": 0.6306266830873518
+    },
+    {
+      "operationId": "GetBalanceTransactionsId",
+      "knn_k50_distance": 0.6414118754817402
+    },
+    {
+      "operationId": "GetCharges",
+      "knn_k50_distance": 0.5938192332454667
+    },
+    {
+      "operationId": "PostCharges",
+      "knn_k50_distance": 0.6130389157069017
+    },
+    {
+      "operationId": "GetChargesCharge",
+      "knn_k50_distance": 0.6097131767187713
+    },
+    {
+      "operationId": "PostChargesCharge",
+      "knn_k50_distance": 0.6150513710352783
+    },
+    {
+      "operationId": "GetConfirmationTokensConfirmationToken",
+      "knn_k50_distance": 0.7159509106353997
+    },
+    {
+      "operationId": "GetCountrySpecs",
+      "knn_k50_distance": 0.7049999693370453
+    },
+    {
+      "operationId": "GetCountrySpecsCountry",
+      "knn_k50_distance": 0.7738227996790483
+    },
+    {
+      "operationId": "GetCoupons",
+      "knn_k50_distance": 0.5936628358435091
+    },
+    {
+      "operationId": "PostCoupons",
+      "knn_k50_distance": 0.6586512023453274
+    },
+    {
+      "operationId": "DeleteCouponsCoupon",
+      "knn_k50_distance": 0.6741461037312375
+    },
+    {
+      "operationId": "GetCouponsCoupon",
+      "knn_k50_distance": 0.5919921695175154
+    },
+    {
+      "operationId": "PostCouponsCoupon",
+      "knn_k50_distance": 0.6156283639328872
+    },
+    {
+      "operationId": "GetCreditNotes",
+      "knn_k50_distance": 0.6098012673726543
+    },
+    {
+      "operationId": "PostCreditNotes",
+      "knn_k50_distance": 0.6524184682996987
+    },
+    {
+      "operationId": "GetCreditNotesId",
+      "knn_k50_distance": 0.6263953452845628
+    },
+    {
+      "operationId": "PostCreditNotesId",
+      "knn_k50_distance": 0.5962368559165667
+    },
+    {
+      "operationId": "PostCustomerSessions",
+      "knn_k50_distance": 0.6537490881371518
+    },
+    {
+      "operationId": "GetCustomers",
+      "knn_k50_distance": 0.5906549018134322
+    },
+    {
+      "operationId": "PostCustomers",
+      "knn_k50_distance": 0.6204774203125503
+    },
+    {
+      "operationId": "DeleteCustomersCustomer",
+      "knn_k50_distance": 0.6659837448590494
+    },
+    {
+      "operationId": "GetCustomersCustomer",
+      "knn_k50_distance": 0.6254705754606179
+    },
+    {
+      "operationId": "PostCustomersCustomer",
+      "knn_k50_distance": 0.6011449184531262
+    },
+    {
+      "operationId": "GetDisputes",
+      "knn_k50_distance": 0.6141444562402798
+    },
+    {
+      "operationId": "GetDisputesDispute",
+      "knn_k50_distance": 0.6193748678946295
+    },
+    {
+      "operationId": "PostDisputesDispute",
+      "knn_k50_distance": 0.7510973123079436
+    },
+    {
+      "operationId": "PostEphemeralKeys",
+      "knn_k50_distance": 0.7254825309821458
+    },
+    {
+      "operationId": "DeleteEphemeralKeysKey",
+      "knn_k50_distance": 0.7482233172560211
+    },
+    {
+      "operationId": "GetEvents",
+      "knn_k50_distance": 0.6696843865339709
+    },
+    {
+      "operationId": "GetEventsId",
+      "knn_k50_distance": 0.6620411854443244
+    },
+    {
+      "operationId": "GetExchangeRates",
+      "knn_k50_distance": 0.6736427884215582
+    },
+    {
+      "operationId": "GetExchangeRatesRateId",
+      "knn_k50_distance": 0.6854184397457505
+    },
+    {
+      "operationId": "PostExternalAccountsId",
+      "knn_k50_distance": 0.6404009943748705
+    },
+    {
+      "operationId": "GetFileLinks",
+      "knn_k50_distance": 0.6771767062088607
+    },
+    {
+      "operationId": "PostFileLinks",
+      "knn_k50_distance": 0.6976688300534974
+    },
+    {
+      "operationId": "GetFileLinksLink",
+      "knn_k50_distance": 0.629671675956211
+    },
+    {
+      "operationId": "PostFileLinksLink",
+      "knn_k50_distance": 0.6591243867634692
+    },
+    {
+      "operationId": "GetFiles",
+      "knn_k50_distance": 0.6290608821391548
+    },
+    {
+      "operationId": "PostFiles",
+      "knn_k50_distance": 0.6935285055892044
+    },
+    {
+      "operationId": "GetFilesFile",
+      "knn_k50_distance": 0.6304406673901576
+    },
+    {
+      "operationId": "GetInvoicePayments",
+      "knn_k50_distance": 0.6502799025919819
+    },
+    {
+      "operationId": "GetInvoicePaymentsInvoicePayment",
+      "knn_k50_distance": 0.5547642336611405
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplates",
+      "knn_k50_distance": 0.6367128353038165
+    },
+    {
+      "operationId": "GetInvoiceRenderingTemplatesTemplate",
+      "knn_k50_distance": 0.649831598026757
+    },
+    {
+      "operationId": "GetInvoiceitems",
+      "knn_k50_distance": 0.5708829685453184
+    },
+    {
+      "operationId": "PostInvoiceitems",
+      "knn_k50_distance": 0.6309616349091862
+    },
+    {
+      "operationId": "DeleteInvoiceitemsInvoiceitem",
+      "knn_k50_distance": 0.6627207279036117
+    },
+    {
+      "operationId": "GetInvoiceitemsInvoiceitem",
+      "knn_k50_distance": 0.5594664584122157
+    },
+    {
+      "operationId": "PostInvoiceitemsInvoiceitem",
+      "knn_k50_distance": 0.6242053132283046
+    },
+    {
+      "operationId": "GetInvoices",
+      "knn_k50_distance": 0.5904907142097258
+    },
+    {
+      "operationId": "PostInvoices",
+      "knn_k50_distance": 0.6083231061012164
+    },
+    {
+      "operationId": "DeleteInvoicesInvoice",
+      "knn_k50_distance": 0.6571776917055607
+    },
+    {
+      "operationId": "GetInvoicesInvoice",
+      "knn_k50_distance": 0.5609172594604707
+    },
+    {
+      "operationId": "PostInvoicesInvoice",
+      "knn_k50_distance": 0.6483273912922073
+    },
+    {
+      "operationId": "PostLinkAccountSessions",
+      "knn_k50_distance": 0.6525438679953006
+    },
+    {
+      "operationId": "GetLinkAccountSessionsSession",
+      "knn_k50_distance": 0.6458179640251255
+    },
+    {
+      "operationId": "GetLinkedAccounts",
+      "knn_k50_distance": 0.6100637627267881
+    },
+    {
+      "operationId": "GetLinkedAccountsAccount",
+      "knn_k50_distance": 0.6010363627792714
+    },
+    {
+      "operationId": "GetMandatesMandate",
+      "knn_k50_distance": 0.6859524066340533
+    },
+    {
+      "operationId": "GetPaymentIntents",
+      "knn_k50_distance": 0.5647775219093903
+    },
+    {
+      "operationId": "PostPaymentIntents",
+      "knn_k50_distance": 0.6170145272373798
+    },
+    {
+      "operationId": "GetPaymentIntentsIntent",
+      "knn_k50_distance": 0.5936505404572486
+    },
+    {
+      "operationId": "PostPaymentIntentsIntent",
+      "knn_k50_distance": 0.5988498186324352
+    },
+    {
+      "operationId": "GetPaymentLinks",
+      "knn_k50_distance": 0.5377596830874787
+    },
+    {
+      "operationId": "PostPaymentLinks",
+      "knn_k50_distance": 0.5589944810361949
+    },
+    {
+      "operationId": "GetPaymentLinksPaymentLink",
+      "knn_k50_distance": 0.5678734753799946
+    },
+    {
+      "operationId": "PostPaymentLinksPaymentLink",
+      "knn_k50_distance": 0.5243276172776633
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurations",
+      "knn_k50_distance": 0.5922234145444759
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurations",
+      "knn_k50_distance": 0.5675909426050351
+    },
+    {
+      "operationId": "GetPaymentMethodConfigurationsConfiguration",
+      "knn_k50_distance": 0.624845400360442
+    },
+    {
+      "operationId": "PostPaymentMethodConfigurationsConfiguration",
+      "knn_k50_distance": 0.5703010497685868
+    },
+    {
+      "operationId": "GetPaymentMethodDomains",
+      "knn_k50_distance": 0.584394357546659
+    },
+    {
+      "operationId": "PostPaymentMethodDomains",
+      "knn_k50_distance": 0.5711125257624208
+    },
+    {
+      "operationId": "GetPaymentMethodDomainsPaymentMethodDomain",
+      "knn_k50_distance": 0.5864808539870491
+    },
+    {
+      "operationId": "PostPaymentMethodDomainsPaymentMethodDomain",
+      "knn_k50_distance": 0.552066043867042
+    },
+    {
+      "operationId": "GetPaymentMethods",
+      "knn_k50_distance": 0.6337536643991314
+    },
+    {
+      "operationId": "PostPaymentMethods",
+      "knn_k50_distance": 0.5810216979580661
+    },
+    {
+      "operationId": "GetPaymentMethodsPaymentMethod",
+      "knn_k50_distance": 0.6254062687553229
+    },
+    {
+      "operationId": "PostPaymentMethodsPaymentMethod",
+      "knn_k50_distance": 0.5517193838996899
+    },
+    {
+      "operationId": "GetPayouts",
+      "knn_k50_distance": 0.6066581132987731
+    },
+    {
+      "operationId": "PostPayouts",
+      "knn_k50_distance": 0.6396834652244924
+    },
+    {
+      "operationId": "GetPayoutsPayout",
+      "knn_k50_distance": 0.6047885808374593
+    },
+    {
+      "operationId": "PostPayoutsPayout",
+      "knn_k50_distance": 0.6135727994183506
+    },
+    {
+      "operationId": "GetPlans",
+      "knn_k50_distance": 0.5825285834379058
+    },
+    {
+      "operationId": "PostPlans",
+      "knn_k50_distance": 0.6572470713631361
+    },
+    {
+      "operationId": "DeletePlansPlan",
+      "knn_k50_distance": 0.6954294633100404
+    },
+    {
+      "operationId": "GetPlansPlan",
+      "knn_k50_distance": 0.5953854502194121
+    },
+    {
+      "operationId": "PostPlansPlan",
+      "knn_k50_distance": 0.6086334337686757
+    },
+    {
+      "operationId": "GetPrices",
+      "knn_k50_distance": 0.6353787904076801
+    },
+    {
+      "operationId": "PostPrices",
+      "knn_k50_distance": 0.6116616497504032
+    },
+    {
+      "operationId": "GetPricesPrice",
+      "knn_k50_distance": 0.5707499407807911
+    },
+    {
+      "operationId": "PostPricesPrice",
+      "knn_k50_distance": 0.5867270294324958
+    },
+    {
+      "operationId": "GetProducts",
+      "knn_k50_distance": 0.5877190114400372
+    },
+    {
+      "operationId": "PostProducts",
+      "knn_k50_distance": 0.6358844092508634
+    },
+    {
+      "operationId": "DeleteProductsId",
+      "knn_k50_distance": 0.6624971298495069
+    },
+    {
+      "operationId": "GetProductsId",
+      "knn_k50_distance": 0.5755085178237556
+    },
+    {
+      "operationId": "PostProductsId",
+      "knn_k50_distance": 0.595490477369649
+    },
+    {
+      "operationId": "GetPromotionCodes",
+      "knn_k50_distance": 0.5946002457486887
+    },
+    {
+      "operationId": "PostPromotionCodes",
+      "knn_k50_distance": 0.6917454372694118
+    },
+    {
+      "operationId": "GetPromotionCodesPromotionCode",
+      "knn_k50_distance": 0.6247370026804712
+    },
+    {
+      "operationId": "PostPromotionCodesPromotionCode",
+      "knn_k50_distance": 0.6135017185930838
+    },
+    {
+      "operationId": "GetQuotes",
+      "knn_k50_distance": 0.6141650879217516
+    },
+    {
+      "operationId": "PostQuotes",
+      "knn_k50_distance": 0.7021465842210651
+    },
+    {
+      "operationId": "GetQuotesQuote",
+      "knn_k50_distance": 0.6024338744447375
+    },
+    {
+      "operationId": "PostQuotesQuote",
+      "knn_k50_distance": 0.6992836911535414
+    },
+    {
+      "operationId": "GetRefunds",
+      "knn_k50_distance": 0.6061202733788756
+    },
+    {
+      "operationId": "PostRefunds",
+      "knn_k50_distance": 0.6230861069194552
+    },
+    {
+      "operationId": "GetRefundsRefund",
+      "knn_k50_distance": 0.5952921934558632
+    },
+    {
+      "operationId": "PostRefundsRefund",
+      "knn_k50_distance": 0.6219206491416319
+    },
+    {
+      "operationId": "GetReviews",
+      "knn_k50_distance": 0.6751849966469617
+    },
+    {
+      "operationId": "GetReviewsReview",
+      "knn_k50_distance": 0.6633522145210159
+    },
+    {
+      "operationId": "GetSetupAttempts",
+      "knn_k50_distance": 0.676539747333912
+    },
+    {
+      "operationId": "GetSetupIntents",
+      "knn_k50_distance": 0.6594745466557056
+    },
+    {
+      "operationId": "PostSetupIntents",
+      "knn_k50_distance": 0.628280914737227
+    },
+    {
+      "operationId": "GetSetupIntentsIntent",
+      "knn_k50_distance": 0.6833172342197068
+    },
+    {
+      "operationId": "PostSetupIntentsIntent",
+      "knn_k50_distance": 0.6559970333343699
+    },
+    {
+      "operationId": "GetShippingRates",
+      "knn_k50_distance": 0.5892333007909109
+    },
+    {
+      "operationId": "PostShippingRates",
+      "knn_k50_distance": 0.6242229956312186
+    },
+    {
+      "operationId": "GetShippingRatesShippingRateToken",
+      "knn_k50_distance": 0.6213988955032721
+    },
+    {
+      "operationId": "PostShippingRatesShippingRateToken",
+      "knn_k50_distance": 0.591881615277909
+    },
+    {
+      "operationId": "PostSources",
+      "knn_k50_distance": 0.7373689342769744
+    },
+    {
+      "operationId": "GetSourcesSource",
+      "knn_k50_distance": 0.6570802905684142
+    },
+    {
+      "operationId": "PostSourcesSource",
+      "knn_k50_distance": 0.6188677721885321
+    },
+    {
+      "operationId": "GetSubscriptionItems",
+      "knn_k50_distance": 0.5791618117036849
+    },
+    {
+      "operationId": "PostSubscriptionItems",
+      "knn_k50_distance": 0.614580806944463
+    },
+    {
+      "operationId": "DeleteSubscriptionItemsItem",
+      "knn_k50_distance": 0.6522461512045012
+    },
+    {
+      "operationId": "GetSubscriptionItemsItem",
+      "knn_k50_distance": 0.5622966622283664
+    },
+    {
+      "operationId": "PostSubscriptionItemsItem",
+      "knn_k50_distance": 0.5905054251439925
+    },
+    {
+      "operationId": "GetSubscriptionSchedules",
+      "knn_k50_distance": 0.5831136986258092
+    },
+    {
+      "operationId": "PostSubscriptionSchedules",
+      "knn_k50_distance": 0.6220867659482452
+    },
+    {
+      "operationId": "GetSubscriptionSchedulesSchedule",
+      "knn_k50_distance": 0.6189913552287143
+    },
+    {
+      "operationId": "PostSubscriptionSchedulesSchedule",
+      "knn_k50_distance": 0.5795725206536902
+    },
+    {
+      "operationId": "GetSubscriptions",
+      "knn_k50_distance": 0.6263423908910344
+    },
+    {
+      "operationId": "PostSubscriptions",
+      "knn_k50_distance": 0.6282856226624269
+    },
+    {
+      "operationId": "DeleteSubscriptionsSubscriptionExposedId",
+      "knn_k50_distance": 0.6534192537136991
+    },
+    {
+      "operationId": "GetSubscriptionsSubscriptionExposedId",
+      "knn_k50_distance": 0.6164323387330632
+    },
+    {
+      "operationId": "PostSubscriptionsSubscriptionExposedId",
+      "knn_k50_distance": 0.6084416819103934
+    },
+    {
+      "operationId": "GetTaxCodes",
+      "knn_k50_distance": 0.6467675358744489
+    },
+    {
+      "operationId": "GetTaxCodesId",
+      "knn_k50_distance": 0.5772103293668285
+    },
+    {
+      "operationId": "GetTaxIds",
+      "knn_k50_distance": 0.5863659370177744
+    },
+    {
+      "operationId": "PostTaxIds",
+      "knn_k50_distance": 0.6020603887465286
+    },
+    {
+      "operationId": "DeleteTaxIdsId",
+      "knn_k50_distance": 0.6226854474826222
+    },
+    {
+      "operationId": "GetTaxIdsId",
+      "knn_k50_distance": 0.587593959157226
+    },
+    {
+      "operationId": "GetTaxRates",
+      "knn_k50_distance": 0.5551003836886386
+    },
+    {
+      "operationId": "PostTaxRates",
+      "knn_k50_distance": 0.6308040177608443
+    },
+    {
+      "operationId": "GetTaxRatesTaxRate",
+      "knn_k50_distance": 0.553462662776781
+    },
+    {
+      "operationId": "PostTaxRatesTaxRate",
+      "knn_k50_distance": 0.571090325589846
+    },
+    {
+      "operationId": "PostTokens",
+      "knn_k50_distance": 0.6710682503647467
+    },
+    {
+      "operationId": "GetTokensToken",
+      "knn_k50_distance": 0.6221052616318289
+    },
+    {
+      "operationId": "GetTopups",
+      "knn_k50_distance": 0.5997427101200778
+    },
+    {
+      "operationId": "PostTopups",
+      "knn_k50_distance": 0.6205160258163142
+    },
+    {
+      "operationId": "GetTopupsTopup",
+      "knn_k50_distance": 0.6045700668241476
+    },
+    {
+      "operationId": "PostTopupsTopup",
+      "knn_k50_distance": 0.5898938610983184
+    },
+    {
+      "operationId": "GetTransfers",
+      "knn_k50_distance": 0.6021448611564227
+    },
+    {
+      "operationId": "PostTransfers",
+      "knn_k50_distance": 0.6346495621211605
+    },
+    {
+      "operationId": "GetTransfersTransfer",
+      "knn_k50_distance": 0.6129079109543931
+    },
+    {
+      "operationId": "PostTransfersTransfer",
+      "knn_k50_distance": 0.6291552026719224
+    },
+    {
+      "operationId": "GetWebhookEndpoints",
+      "knn_k50_distance": 0.6011721814512864
+    },
+    {
+      "operationId": "PostWebhookEndpoints",
+      "knn_k50_distance": 0.6892563379734291
+    },
+    {
+      "operationId": "DeleteWebhookEndpointsWebhookEndpoint",
+      "knn_k50_distance": 0.6746258024160887
+    },
+    {
+      "operationId": "GetWebhookEndpointsWebhookEndpoint",
+      "knn_k50_distance": 0.6219443176651898
+    },
+    {
+      "operationId": "PostWebhookEndpointsWebhookEndpoint",
+      "knn_k50_distance": 0.6432959270086394
+    }
+  ]
+}

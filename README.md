@@ -1,4 +1,4 @@
-# mcp-server-token-sizes
+# MCP server OpenAPI token sizes
 
 Becnhmarking how many tokens the [three-metatool design](https://www.stainless.com/blog/lessons-from-openapi-to-mcp-server-conversion#handling-large-apis-dynamically) for Stripe's user-facing MCP server uses up.
 
@@ -316,3 +316,31 @@ PostWebhookEndpointsWebhookEndpoint
 
 * [not-included-apis](apis/not-included.csv)
 * [sorted openapi schema char sizes](apis/schema-sizes-sorted.csv) (~2-4 chars = 1 token)
+
+# Cosine distance between MCP dynamic tools
+
+The following files contain {operationId}:{description} entries:
+
+`data/spec3-top-level-name-description.json`: 176 top-level API tool names + descriptions
+`data/spec3-top-level-name-description.json`: all 572 API tool names + descriptions
+
+The `scripts/run_pipeline.py` embeds the entries from the files above, calculates pairwise nearest-neighbor distances, 
+clusters them and then calculates the distances between the clusters. Clusters that are close to one another
+are or tools that are close together within a cluster are flagged as potentially ambiguous if they have cosine distances <= 0.15:
+
+* 176 APIs: [confusion_clusters.csv](analysis/top-level-176/confusion_clusters.csv)
+* all 572 APIs: [confusion_clusters.csv](analysis/all-572/confusion_clusters.csv)
+
+For 176 top-level APIs, there are three potentially ambiguous clusters:
+   1. GetAccount, GetAccountsAccount
+   2. GetPaymentMethodConfigurations, GetPaymentMethodConfigurationsConfiguration
+   3. GetPaymentMethodDomains, GetPaymentMethodDomainsPaymentMethodDomain
+
+The first is an alias, duplicative API. The 2nd and 3rd are list versus detail endpoints and would be naturally disambiguated from users prompts, e.g. "show me my payment configs" (list) vs "show me my payment config" (detail).
+
+For the all-572 API file, there were 67 potentially ambiguous clusters, that fall into a few categories:
+   * list vs detail endpoints
+   * for Treasury, internal vs external bank
+   * alias/duplicated APIs
+
+These ambiguities would disambiguated through natural prompts that users write, e.g. "show me my credit balance transactions" (list) vs "show  me my credit balance transaction" (detail).
