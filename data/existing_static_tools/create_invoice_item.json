@@ -1,0 +1,26 @@
+{
+    "name": "create_invoice_item",
+    "description": "This tool will create an invoice item in Stripe.\n\nIt takes three arguments:\n- customer (str): The ID of the customer to create the invoice item for.\n- price (str): The ID of the price to create the invoice item for.\n- invoice (str): The ID of the invoice to create the invoice item for.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer": {
+          "description": "The ID of the customer to create the invoice item for.",
+          "type": "string"
+        },
+        "price": {
+          "description": "The ID of the price for the item.",
+          "type": "string"
+        },
+        "invoice": {
+          "description": "The ID of the invoice to create the item for.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "customer",
+        "invoice",
+        "price"
+      ]
+    }
+  }

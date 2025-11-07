@@ -1,0 +1,50 @@
+{
+    "name": "create_price",
+    "description": "This tool will create a price in Stripe. If a product has not already been specified, a product should be created first.\n\nIt takes three arguments:\n- product (str): The ID of the product to create the price for.\n- unit_amount (int): The unit amount of the price in currency minor units, e.g. cents for USD and yen for JPY.\n- currency (str): The currency of the price.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product": {
+          "description": "The ID of the product to create the price for.",
+          "type": "string"
+        },
+        "unit_amount": {
+          "description": "The unit amount of the price in cents.",
+          "type": "number"
+        },
+        "currency": {
+          "description": "The currency of the price.",
+          "type": "string"
+        },
+        "recurring": {
+          "description": "The recurring components of a price such as its interval.",
+          "type": "object",
+          "properties": {
+            "interval": {
+              "description": "Specifies billing frequency. Either day, week, month or year.",
+              "enum": [
+                "day",
+                "month",
+                "week",
+                "year"
+              ],
+              "type": "string"
+            },
+            "interval_count": {
+              "description": "The number of intervals between subscription billings. For example, interval=month and interval_count=3 bills every 3 months. Maximum of three years interval allowed (3 years, 36 months, or 156 weeks).",
+              "type": "integer"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "interval"
+          ]
+        }
+      },
+      "required": [
+        "currency",
+        "product",
+        "unit_amount"
+      ]
+    }
+  }

@@ -1,0 +1,29 @@
+{
+    "name": "create_refund",
+    "description": "This tool will refund a payment intent in Stripe.\n\nIt takes three arguments:\n- payment_intent (str): The ID of the payment intent to refund.\n- amount (int, optional): The amount to refund in currency minor units, e.g. cents for USD and yen for JPY.\n- reason (str, optional): The reason for the refund. Options: \"duplicate\", \"fraudulent\", \"requested_by_customer\".\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "payment_intent": {
+          "description": "The ID of the PaymentIntent to refund.",
+          "type": "string"
+        },
+        "amount": {
+          "description": "The amount to refund in cents.",
+          "type": "integer"
+        },
+        "reason": {
+          "description": "The reason for the refund.",
+          "enum": [
+            "duplicate",
+            "fraudulent",
+            "requested_by_customer"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "payment_intent"
+      ]
+    }
+  }

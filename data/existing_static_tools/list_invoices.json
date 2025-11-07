@@ -1,0 +1,19 @@
+{
+    "name": "list_invoices",
+    "description": "This tool will fetch a list of Invoices from Stripe.\n\nIt takes two arguments:\n- customer (str, optional): The ID of the customer to list invoices for.\n\n- limit (int, optional): The number of invoices to return.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer": {
+          "description": "The ID of the customer to list invoices for.",
+          "type": "string"
+        },
+        "limit": {
+          "description": "A limit on the number of objects to be returned. Limit can range between 1 and 100, and the default is 10.",
+          "minimum": 1,
+          "maximum": 100,
+          "type": "integer"
+        }
+      }
+    }
+  }

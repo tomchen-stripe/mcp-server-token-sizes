@@ -1,0 +1,20 @@
+{
+    "name": "create_product",
+    "description": "This tool will create a product in Stripe.\n\nIt takes two arguments:\n- name (str): The name of the product.\n- description (str, optional): The description of the product.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the product.",
+          "type": "string"
+        },
+        "description": {
+          "description": "The description of the product.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  }

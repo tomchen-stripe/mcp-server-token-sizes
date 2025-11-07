@@ -1,0 +1,19 @@
+{
+    "name": "list_customers",
+    "description": "This tool will fetch a list of Customers from Stripe.\n\nIt takes two arguments:\n- limit (int, optional): The number of customers to return.\n- email (str, optional): A case-sensitive filter on the list based on the customer's email field.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "description": "A limit on the number of objects to be returned. Limit can range between 1 and 100.",
+          "minimum": 1,
+          "maximum": 100,
+          "type": "integer"
+        },
+        "email": {
+          "description": "A case-sensitive filter on the list based on the customer's email field. The value must be a string.",
+          "type": "string"
+        }
+      }
+    }
+  }

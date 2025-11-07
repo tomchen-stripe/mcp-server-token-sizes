@@ -1,0 +1,21 @@
+{
+    "name": "create_payment_link",
+    "description": "This tool will create a payment link in Stripe.\n\nIt takes two arguments:\n- price (str): The ID of the price to create the payment link for.\n- quantity (int): The quantity of the product to include in the payment link.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "price": {
+          "description": "The ID of the price to create the payment link for.",
+          "type": "string"
+        },
+        "quantity": {
+          "description": "The quantity of the product to include.",
+          "type": "number"
+        }
+      },
+      "required": [
+        "price",
+        "quantity"
+      ]
+    }
+  }

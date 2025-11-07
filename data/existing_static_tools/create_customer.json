@@ -1,0 +1,21 @@
+{
+    "name": "create_customer",
+    "description": "This tool will create a customer in Stripe.\n\nIt takes two arguments:\n- name (str): The name of the customer.\n- email (str, optional): The email of the customer.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the customer",
+          "type": "string"
+        },
+        "email": {
+          "description": "The email of the customer",
+          "format": "email",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  }

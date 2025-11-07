@@ -1,0 +1,24 @@
+{
+    "name": "list_disputes",
+    "description": "This tool will fetch a list of disputes in Stripe.\n\nIt takes the following arguments:\n- charge (string, optional): Only return disputes associated to the charge specified by this charge ID.\n- payment_intent (string, optional): Only return disputes associated to the PaymentIntent specified by this PaymentIntent ID.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "charge": {
+          "description": "Only return disputes associated to the charge specified by this charge ID.",
+          "type": "string"
+        },
+        "payment_intent": {
+          "description": "Only return disputes associated to the PaymentIntent specified by this PaymentIntent ID.",
+          "type": "string"
+        },
+        "limit": {
+          "description": "A limit on the number of objects to be returned. Limit can range between 1 and 100, and the default is 10.",
+          "minimum": 1,
+          "maximum": 100,
+          "default": 10,
+          "type": "integer"
+        }
+      }
+    }
+  }

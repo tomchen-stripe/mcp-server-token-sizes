@@ -1,0 +1,16 @@
+{
+    "name": "cancel_subscription",
+    "description": "This tool will cancel a subscription in Stripe.\n\nIt takes the following arguments:\n- subscription (str, required): The ID of the subscription to cancel.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "subscription": {
+          "description": "The ID of the subscription to cancel.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "subscription"
+      ]
+    }
+  }

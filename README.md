@@ -306,12 +306,6 @@ PostWebhookEndpointsWebhookEndpoint
 
 </details>
 
-## What's next
-
-* evaluate the ability of sota models to navigate 176+ dynamic tools across different reasoning strengths
-   * evaluate different grouping strategies for tools
-* evaluate the ability of sota models to parse and use complex openapi schemas (`PostCheckoutSessions`)
-
 ## Other data points
 
 * [not-included-apis](apis/not-included.csv)
@@ -344,3 +338,53 @@ For the all-572 API file, there were 67 potentially ambiguous clusters, that fal
    * alias/duplicated APIs
 
 These ambiguities would disambiguated through natural prompts that users write, e.g. "show me my credit balance transactions" (list) vs "show  me my credit balance transaction" (detail).
+
+# Sizes of Stripe's mcp.stripe.com tools (11/7/25)
+
+data/existing_static_tools:
+retrieve_balance.json                             52 tokens
+get_stripe_account_info.json                      54 tokens
+finalize_invoice.json                            108 tokens
+cancel_subscription.json                         111 tokens
+list_coupons.json                                129 tokens
+list_products.json                               135 tokens
+create_product.json                              143 tokens
+create_customer.json                             150 tokens
+create_payment_link.json                         167 tokens
+create_invoice.json                              170 tokens
+list_invoices.json                               184 tokens
+list_customers.json                              192 tokens
+list_payment_intents.json                        204 tokens
+list_prices.json                                 208 tokens
+create_invoice_item.json                         220 tokens
+create_refund.json                               248 tokens
+list_disputes.json                               241 tokens
+fetch_stripe_resources.json                      271 tokens
+search_stripe_documentation.json                 292 tokens
+list_subscriptions.json                          310 tokens
+create_price.json                                412 tokens
+update_dispute.json                              437 tokens
+create_coupon.json                               514 tokens
+update_subscription.json                         518 tokens
+search_stripe_resources.json                    1494 tokens
+-----------------------------------------------------------
+TOTAL                                           6964 tokens
+
+Assuming the smallest token window capacity (128K - ChatGPT5) we use up 5%
+of the context window today.
+
+If we use up 100% of context window, we can add:
+- 81 of our largest tool
+- 435 of our average-sized tool
+
+If we use up 50% of context window, we can add:
+- 40 of our largest tool
+- 117 of our average-sized tool
+
+If we use up 25% of context window, we can add:
+- 20 of our largest tool
+- 58 of our average-sized tool
+
+If we use up 10% of context window, we can add:
+- 8 of our largest tool
+- 43 of our average-sized tool

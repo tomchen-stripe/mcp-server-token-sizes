@@ -1,0 +1,52 @@
+{
+    "name": "update_subscription",
+    "description": "  This tool will update an existing subscription in Stripe. If changing an existing subscription item, the existing subscription item has to be set to deleted and the new one has to be added.\n\n  It takes the following arguments:\n  - subscription (str, required): The ID of the subscription to update.\n  - proration_behavior (str, optional): Determines how to handle prorations when the subscription items change. Options: 'create_prorations', 'none', 'always_invoice', 'none_implicit'.\n  - items (array, optional): A list of subscription items to update, add, or remove. Each item can have the following properties:\n    - id (str, optional): The ID of the subscription item to modify.\n    - price (str, optional): The ID of the price to switch to.\n    - quantity (int, optional): The quantity of the plan to subscribe to.\n    - deleted (bool, optional): Whether to delete this item.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "subscription": {
+          "description": "The ID of the subscription to update.",
+          "type": "string"
+        },
+        "proration_behavior": {
+          "description": "Determines how to handle prorations when the subscription items change.",
+          "enum": [
+            "always_invoice",
+            "create_prorations",
+            "none",
+            "none_implicit"
+          ],
+          "type": "string"
+        },
+        "items": {
+          "description": "A list of subscription items to update, add, or remove.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "description": "The ID of the subscription item to modify.",
+                "type": "string"
+              },
+              "price": {
+                "description": "The ID of the price to switch to.",
+                "type": "string"
+              },
+              "quantity": {
+                "description": "The quantity of the plan to subscribe to.",
+                "type": "number"
+              },
+              "deleted": {
+                "description": "Whether to delete this item.",
+                "type": "boolean"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "subscription"
+      ]
+    }
+  }

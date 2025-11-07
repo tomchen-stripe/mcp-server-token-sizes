@@ -1,0 +1,19 @@
+{
+    "name": "list_prices",
+    "description": "This tool will fetch a list of Prices from Stripe.\n\nIt takes two arguments.\n- product (str, optional): The ID of the product to list prices for.\n- limit (int, optional): The number of prices to return.\n\nNote that the price unit_amount returned is in currency minor units, e.g. cents for USD and yen for JPY.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "product": {
+          "description": "The ID of the product to list prices for.",
+          "type": "string"
+        },
+        "limit": {
+          "description": "A limit on the number of objects to be returned. Limit can range between 1 and 100, and the default is 10.",
+          "minimum": 1,
+          "maximum": 100,
+          "type": "integer"
+        }
+      }
+    }
+  }

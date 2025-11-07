@@ -1,0 +1,16 @@
+{
+    "name": "finalize_invoice",
+    "description": "This tool will finalize an invoice in Stripe.\n\nIt takes one argument:\n- invoice (str): The ID of the invoice to finalize.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "invoice": {
+          "description": "The ID of the invoice to finalize.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "invoice"
+      ]
+    }
+  }

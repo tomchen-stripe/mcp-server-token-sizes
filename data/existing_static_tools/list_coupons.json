@@ -1,0 +1,15 @@
+{
+    "name": "list_coupons",
+    "description": "This tool will fetch a list of Coupons from Stripe.\n\nIt takes one optional argument:\n- limit (int, optional): The number of coupons to return.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "limit": {
+          "description": "A limit on the number of objects to be returned. Limit can range between 1 and 100.",
+          "minimum": 1,
+          "maximum": 100,
+          "type": "integer"
+        }
+      }
+    }
+  }

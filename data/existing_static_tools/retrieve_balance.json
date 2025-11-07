@@ -1,0 +1,8 @@
+{
+    "name": "retrieve_balance",
+    "description": "This tool will retrieve the balance from Stripe. It takes no input.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }

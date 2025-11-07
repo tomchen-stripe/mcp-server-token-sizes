@@ -1,0 +1,19 @@
+{
+    "name": "list_payment_intents",
+    "description": "This tool will list payment intents in Stripe.\n\nIt takes two arguments:\n- customer (str, optional): The ID of the customer to list payment intents for.\n- limit (int, optional): The number of payment intents to return.\n\nNote that the payment intent amount returned is in currency minor units, e.g. cents for USD and yen for JPY.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "customer": {
+          "description": "The ID of the customer to list payment intents for.",
+          "type": "string"
+        },
+        "limit": {
+          "description": "A limit on the number of objects to be returned. Limit can range between 1 and 100.",
+          "minimum": 1,
+          "maximum": 100,
+          "type": "integer"
+        }
+      }
+    }
+  }

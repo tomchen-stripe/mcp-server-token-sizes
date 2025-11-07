@@ -1,0 +1,39 @@
+{
+    "name": "update_dispute",
+    "description": "When you receive a dispute, contacting your customer is always the best first step. If that doesn't work, you can submit evidence to help resolve the dispute in your favor. This tool helps.\n\nIt takes the following arguments:\n- dispute (string): The ID of the dispute to update\n- evidence (object, optional): Evidence to upload for the dispute.\n    - cancellation_policy_disclosure (string)\n    - cancellation_rebuttal (string)\n    - duplicate_charge_explanation (string)\n    - uncategorized_text (string, optional): Any additional evidence or statements.\n- submit (boolean, optional): Whether to immediately submit evidence to the bank. If false, evidence is staged on the dispute.\n",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "dispute": {
+          "description": "The ID of the dispute to update",
+          "type": "string"
+        },
+        "evidence": {
+          "description": "Evidence to upload, to respond to a dispute. Updating any field in the hash will submit all fields in the hash for review.",
+          "type": "object",
+          "properties": {
+            "cancellation_policy_disclosure": {
+              "description": "An explanation of how and when the customer was shown your refund policy prior to purchase.",
+              "type": "string"
+            },
+            "duplicate_charge_explanation": {
+              "description": "An explanation of the difference between the disputed charge versus the prior charge that appears to be a duplicate.",
+              "type": "string"
+            },
+            "uncategorized_text": {
+              "description": "Any additional evidence or statements.",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "submit": {
+          "description": "Whether to immediately submit evidence to the bank. If false, evidence is staged on the dispute.",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "dispute"
+      ]
+    }
+  }
