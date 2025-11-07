@@ -341,7 +341,7 @@ These ambiguities would disambiguated through natural prompts that users write, 
 
 # Sizes of Stripe's mcp.stripe.com tools (11/7/25)
 
-data/existing_static_tools:
+```
 retrieve_balance.json                             52 tokens
 get_stripe_account_info.json                      54 tokens
 finalize_invoice.json                            108 tokens
@@ -369,6 +369,7 @@ update_subscription.json                         518 tokens
 search_stripe_resources.json                    1494 tokens
 -----------------------------------------------------------
 TOTAL                                           6964 tokens
+```
 
 Assuming the smallest token window capacity (128K - ChatGPT5) we use up 5%
 of the context window today.
@@ -388,3 +389,5 @@ If we use up 25% of context window, we can add:
 If we use up 10% of context window, we can add:
 - 8 of our largest tool
 - 43 of our average-sized tool
+
+From `get_static_tools_sizes.py`.
