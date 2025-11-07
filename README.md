@@ -339,7 +339,7 @@ For the all-572 API file, there were 67 potentially ambiguous clusters, that fal
 
 These ambiguities would disambiguated through natural prompts that users write, e.g. "show me my credit balance transactions" (list) vs "show  me my credit balance transaction" (detail).
 
-# Sizes of Stripe's mcp.stripe.com tools (11/7/25)
+# Size of Stripe's MCP tools (11/7/25)
 
 ```
 retrieve_balance.json                             52 tokens
